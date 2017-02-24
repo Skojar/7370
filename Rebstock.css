@@ -1,0 +1,106 @@
+	body	{
+		font-family: arial;
+		background-image: url("tile_bg.png");
+		background-repeat: repear-y;
+	}
+	div {
+		border-radius: 2em;
+	}
+	h1,h2,h3 {
+		text-align: center;
+	}
+	ul {
+		list-style-type: none;
+	}
+	p { 
+		text-align: left;
+		margin-top: 1em;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	.item_group {
+		width: 100%;
+		overflow: auto;
+		float: left;
+		position: relative;
+		border: none;
+		background-color: oldlace;
+		margin: 2em;
+		text-align: left;
+	}
+	.item {
+		margin: 2em;
+		background-color: white;
+		padding: 1em;
+	}
+	a {
+		text-decoration: none;
+		color: saddlebrown;
+	}
+	a:hover {
+		text-shadow: 1px 1px 1px burlywood;
+	}
+	.maintitle {
+		text-align: center;
+		font-size: 4em;
+		color: saddlebrown;
+	}
+	#right {
+		width: 250px;
+		float: right;
+	}
+	#header {
+		width: 100%;
+		background-color: white;
+	}
+	#left {
+		width: 250px;
+		float: left;
+		background-color: oldlace;
+	}
+	#center {
+		width: 100%
+		background-color: yellow;
+		margin-left: 250px;
+		margin-right: 250px;
+	}
+	#copyright {
+		clear: both;
+		width: 100%;
+		display: block;
+		font-size: xx-small;
+	}
+	#copyright p {
+		text-align: center;
+	}
+
+	.sidebar h1,.sidebar h2,.sidebar p {
+		text-align: center;
+	}	
+	.sidebar p,.sidebar li {
+		font-size: small;
+	}
+	.profile_pic {
+		float: left;
+		margin-right: 2em;
+		width: 200px;
+		border-radius: 2em;
+	}
+	.student_info {
+		float: right;
+		display: block;
+	}
+	.subtitle {
+		font-weight: bold;
+		font-size: large;
+	}
+	.project_link {
+		text-indent: 5em;
+		font-style: italic;		
+	}
+	#course_info {
+		padding-top: 1em;
+	}
+	.bullets {
+		list-style-type: circle;
+	}
