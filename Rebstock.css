@@ -1,7 +1,7 @@
 	body	{
 		font-family: arial;
 		background-image: url("tile_bg.png");
-		background-repeat: repear-y;
+		background-repeat: repeat-y;
 	}
 	div {
 		border-radius: 2em;
@@ -59,8 +59,7 @@
 		background-color: oldlace;
 	}
 	#center {
-		width: 100%
-		background-color: yellow;
+		width: 100%;
 		margin-left: 250px;
 		margin-right: 250px;
 	}
