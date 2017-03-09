@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="mp3style.css" />
+<title>Nonsense Generator</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+//a few functions to make it fun
+var nobodyConst = "Nobody"; //I defined it here because I use it in two different places and I might want to change it.
+var maxQuant = 255; //I decided at some point I wanted to experiment with different values, so it's a quasi-constant, now.  Remeber to update the html!
+
+$(document).ready(function(){ //this runs when the docuement is loaded.
+	
+	//pick a random slider setting to start
+	var qty = Math.floor(Math.random() * maxQuant) + 1;
+	$('#slide').val(qty);
+	slideUpdate(qty);
+	
+	//pick a random color, too
+	var r = Math.floor(Math.random() * 256);
+	var g = Math.floor(Math.random() * 256);
+	var b = Math.floor(Math.random() * 256);
+	var c = rgbtoHex(r,g,b);
+	$('#color').val(c);
+	
+	//this will run whenever the GO! button is pressed:
+	$("#gobutton").click(function(){
+		//convert the provided name to uppercase, or use "Nobody" if it's blank.
+		// (this and the checkbox below constitute my 'validation.'  Hope that counts.)
+		var speaks = $('#speaker').val() != "" ? $('#speaker').val().toUpperCase() : nobodyConst;
+	
+		var count = $('#slide').val(); //get the value from the slider input
+		var colo = $('#color').val(); //get color from color selector
+		var phrase = $('input[name=phrase]:checked').val(); //get the base phrase from the radio buttons
+		var newsize = $("#sizeselect option:selected").val() ? $("#sizeselect option:selected").val() : 5;
+
+
+		if (document.getElementById('verify').checked == true){ //only bother to build the output if the checkbox is checked
+		$("#outputdiv").css("font-size", newsize + "em");		//set the font size of the output div based on the select (put in this variable above)
+			outputhtml = '<span style="color: ' + colo + ';">';
+			switch(phrase) { //select the nonsense components to use.
+				case "Yabba":
+					var front = "Yabba";
+					var middle = "dabba";
+					var back = "doo";
+					break;
+				case "Googl":
+					var front = "Googley";
+					var middle = "moogley";
+					var back = "moo";
+					break;
+				default:
+					var front = "Piggly";
+					var middle = "wiggly";
+					var back = "wee";
+			}
+			outputhtml += speaks + " says:<br /> " + front;
+			for(i = 0; i < count; i++){
+				outputhtml += middle;
+			}
+			outputhtml += back;
+			for(e = 0; e <count; e++){
+				outputhtml += '!';
+			}
+			outputhtml += '</span>';
+		} else { //if they put in their name, the error mentions it.
+			$("#outputdiv").css("font-size", "5em"); //set this back to the default before error message.
+			outputhtml = 'You didn\'t click the<br />checkbox' + (speaks != nobodyConst ? ', ' + speaks : '') + '!';
+		}
+		$('#outputtext').html(outputhtml); //output to browser
+	});
+});
+
+function slideUpdate(cnt) {
+	//shows what number the slider is set to, dynamically
+	var temp = Math.ceil(cnt / maxQuant * 255); //makes the number more red the higher it gets.   
+	document.querySelector('#countshow').innerHTML = '<span style="color: rgb(' + temp + ',0,0);">' + cnt + '</span>';
+}
+
+function toHex(d) {
+	//returns a two-digit hexidecimal number (00 to ff)
+	d = Math.min(255,d); //these two check that d is in an acceptable range.
+	d = Math.max(0,d);   //not strictly needed, since d is only coming from a slider, but I felt like it was good form.
+	var h = d.toString(16);  //hex = base sixteen https://www.w3schools.com/jsref/jsref_tostring_number.asp
+	return h.length == 1 ? "0" + h : h; //add a leading zero if the result is only one digit.
+}
+function rgbtoHex(r,g,b) {
+	//converts decimal r,g, and b values into the normal html color code.
+	return "#" + toHex(r) + toHex(g) + toHex(b);
+}
+</script>
+</head>
+<body>
+	<div id="outputdiv">
+		<p id="outputtext">Adjust the settings<br />on the left<br />and press the<br />GO!<br />button</p>
+	</div>
+	<div id="inputdiv">
+	<!-- I intentionally left off the <form> tags so that the page wouldn't reload. My understanding is that HTML5 is fine with that.-->
+	<label>Enter your name</label>
+		<br />
+		<input type="text" id="speaker" size=15 />
+		<hr />
+	<label>Select A Quantity of Nonsense</label>
+		<br />
+		<input type="range" id="slide" min="1" max="255" step="1" onchange="slideUpdate(value)" />
+		<br />
+		<output id="countshow">1</output>
+		<hr />
+	<label>...And A Color</label>
+		<br />
+		<input type="color" id="color" />
+		<hr />
+	<label>...And A Size</label>
+		<br />
+		<select id="sizeselect" size=4>
+			<option value=0.5>super tiny</option>
+			<option value=1>normal</option>
+			<option value=2>large</option>
+			<option value=5>megalarge</option>
+		</select>
+		<hr />
+	<label class="leftalign">...And A Flavor</label>
+		<br />
+		<input type="radio" name="phrase" value="Yabba" checked />Yabbadabba
+		<br />
+		<input type="radio" name="phrase" value="Googl" />Googleymoogley
+		<br />
+		<input type="radio" name="phrase" value="Piggl" />Pigglywiggly
+		<hr />
+	<button id="gobutton" autofocus title="Press here to Go!">GO!</button>
+		<br />
+	<label>Really Go?</label>
+		<br />
+		<input type="checkbox" id="verify" />
+		<span class="note">Yes</span>
+		<br />
+	</div>
+</body>
+</html>
