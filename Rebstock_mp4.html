@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="mp4style.css" />
+<title>HTML5 Media</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+var maxheight = 189; //be sure to change these is the style changes!  
+var maxwidth = 168; //A better way would be to read the attributes of the div, but I'll save that for version 2. Half of 336
+
+$(document).ready(function(){ //this runs when the docuement is loaded.
+
+	var filelist = "./imagedir.php";  //points to php file that returns a JSON list of image files in its directory.
+	var galleryOut = "";
+	
+	$.getJSON( filelist, function(data) { //imports that JSON list
+		$('#JSONdata').text(JSON.stringify(data));
+		$('#maxindex').html(data.length - 1);
+		$.each( data, function( index, value ) { //iterates through the list
+			//data is objects with properties:  .filename, .width, .height
+			galleryOut = galleryOut + galleryItem(index,value); //write the html for the gallery thumbnails.
+		});
+		var galleryHTML = (galleryOut == "" ? 'Images failed to load!' : galleryOut);
+		$('#galleryimages').html(galleryHTML);
+		$('#focusindex').html('0');
+		var thisindex = $('#focusindex').html();
+		showcase(thisindex);
+		//console.log( JSON.parse( $('#JSONdata').text() )[thisindex].filename );
+	});
+
+	$("#prev").click(function(){ //decrement index, wrapping around to the maximum 
+		thisindex = $('#focusindex').html();
+		$( '#' + thisindex ).toggleClass( "highlighted" );
+		thisindex--;
+		if( thisindex < 0 ) thisindex = $('#maxindex').html();
+		showcase(thisindex);
+	});
+	
+	$("#next").click(function(){ //increment index, wrapping around to 0 
+		thisindex = $('#focusindex').html();
+		$( '#' + thisindex ).toggleClass( "highlighted" );
+		thisindex++;
+		if( thisindex > $('#maxindex').html() ) thisindex = 0;
+		showcase(thisindex);	
+	});
+	
+});
+
+function galleryItem(index,value){
+	//creates a gallery item given an object from the JSON array and its index.
+	var hzoom = value.width / maxwidth;
+	var vzoom = value.height/ maxheight;
+	var ratio = (hzoom > vzoom ? hzoom : vzoom); //checks aspect ratio of picture to decide which dimension to use
+			
+	return '<div class="thumbnail"><img id="' + index + '" src="' + value.filename + '" width="' + Math.floor(value.width / ratio) + 'px" height="' + Math.floor(value.height / ratio) + 'px" alt="image number ' + index + '" /></div>';
+	
+};
+
+function getImageObject(index){ //didn't end up using the JSON retention, but I'll leave the function just in case I change my mind.
+	return JSON.parse( $('#JSONdata').text() )[index];
+}
+
+function showcase(index){
+	//puts the image referenced in value in the showcase, and highights its thumbnail
+	//I originally had it reference stored JSON data, but now I just 
+	//use the thumbnail as a reference for filename and appropriate sizing.
+	// (the ratio was made to fit the proportions when the thumbnail was loaded.  Basically the showcase image is x3 the thumbnail in both dimensions, so I just multiply rather than recalculating.)
+	//since that's all I really need, I abandoned the JSON code.  Some of it is still around, and should be cleaned up.
+	var reference = $( '#' + index );
+	$( '#showcaseimage').attr("src", reference.attr("src") );
+	$( '#showcaseimage').attr("width", Math.floor( reference.attr("width").replace(/\D/g,'') * 3 ) + "px"); //I don't like hard coding these numbers but it's saturday night and I'm never going to reuse this code.
+	$( '#showcaseimage').attr("height", Math.floor( reference.attr("height").replace(/\D/g,'') * 3 ) + "px");	
+	reference.toggleClass( "highlighted" );
+	$('#focusindex').html(index);
+}
+
+</script>
+</head>
+<body>
+	<div id="prevdiv">
+		<button id="prev" title="previous">&#9204;</button>
+	</div>
+	<div id="nextdiv">
+		<button id="next" title="previous">&#9205;</button>
+	</div>
+	<div class="wrapper">
+		<div id="gallery">
+			<div id="showcase"><img id="showcaseimage" alt="showcase image" /></div>
+			<div id="galleryimages"> </div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div id="video" class="notthumbnail"> </div>
+		<div id="sound" class="notthumbnail"> </div>
+		<div id="embed" class="notthumbnail"><iframe width="336" height="189" src="https://www.youtube.com/embed/1ZxGtvpp49M" frameborder="0" allowfullscreen></iframe></div>
+	</div>
+<div id="JSONdata"></div><!-- turns out I didn't use this, but I'm keeping it in case I do need it. -->
+<div id="focusindex"></div><!-- these two divs contain the two variables I need to retain to make the scrolling work.  It may not be the best way, but it was easy and it works. -->
+<div id="maxindex"></div>
+
+</body>
+</html>
