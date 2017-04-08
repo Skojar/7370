@@ -97,7 +97,7 @@ h1 {
 #nav li { /* all list items */
 	float: left;
 	width: 10em; /* width needed or else Opera goes nuts */
-	font-size: large;
+	font-size: small;
 	border-radius: 10px;
 	background-color: ivory;
 	border: 10px solid transparent;
