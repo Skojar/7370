@@ -1,0 +1,119 @@
+#cancel {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 1;
+}
+#show {
+	display: none;
+	position: fixed;
+	top: 10%;
+	left: 10%;
+	margin: auto;
+	z-index: 100;
+	width: 80%;
+	height: 80%;
+	background-color: ivory;
+	border-radius: 10px;
+	padding: 25px;
+	border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(jaggedborder.png) 30% round; /* Safari 3.1-5 */
+    -o-border-image: url(jaggedborder.png) 30% round; /* Opera 11-12.1 */
+    border-image: url(jaggedborder.png) 30% round;	
+}
+#ground {
+	display: block;
+	z-index: -1;
+	clear: both;
+
+}
+body {
+	background-color: white;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+a {
+	color: indianred;
+	font-weight: bold;
+	text-decoration: none;
+}
+a.hover {
+	font-style: italic;
+}
+h1 {
+	color: firebrick;
+	font-size: x-large;
+	font-family: Impact, Charcoal, sans-serif;
+}
+.item {
+	display: block;
+	float: left;
+	padding: 15px;
+	margin: 0;
+	width: 10em;
+	font-size: large;	
+	height: 20em;
+	background-color: ivory;	
+	border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(jaggedborder.png) 30% round; /* Safari 3.1-5 */
+    -o-border-image: url(jaggedborder.png) 30% round; /* Opera 11-12.1 */
+    border-image: url(jaggedborder.png) 30% round;	
+	overflow-y: auto;
+	
+}
+#attribution {
+	display: block;
+	position: fixed;
+	bottom: 0;
+	left: -2%;
+	width: 105%;
+	text-align: center;
+	background-color: ivory;	
+	border: 10px solid transparent;
+    padding: 25px 20% 25px 5%;
+    -webkit-border-image: url(jaggedborder.png) 30% round; /* Safari 3.1-5 */
+    -o-border-image: url(jaggedborder.png) 30% round; /* Opera 11-12.1 */
+    border-image: url(jaggedborder.png) 30% round;		
+}
+
+#nav, #nav ul { /* all lists */
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 1;
+}
+
+#nav a {
+	display: block;
+	width: 10em;
+}
+
+#nav li { /* all list items */
+	float: left;
+	width: 10em; /* width needed or else Opera goes nuts */
+	font-size: large;
+	border-radius: 10px;
+	background-color: ivory;
+	border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(jagedborder.png) 30% round; /* Safari 3.1-5 */
+    -o-border-image: url(jaggedborder.png) 30% round; /* Opera 11-12.1 */
+    border-image: url(jaggedborder.png) 30% round;	
+	color: indianred;	
+	font-family: Impact, Charcoal, sans-serif;
+}
+
+#nav li ul { /* second-level lists */
+	position: absolute;
+	width: 10em;
+	left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+}
+
+#nav li:hover ul, #nav li.sfhover ul { /* lists nested under hovered list items */
+	left: auto;
+}
