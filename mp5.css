@@ -25,6 +25,7 @@
     -webkit-border-image: url(jaggedborder.png) 30% round; /* Safari 3.1-5 */
     -o-border-image: url(jaggedborder.png) 30% round; /* Opera 11-12.1 */
     border-image: url(jaggedborder.png) 30% round;	
+	overflow-y: auto;
 }
 #ground {
 	display: block;
