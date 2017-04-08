@@ -1,5 +1,5 @@
-#cancel {
-	display: none;
+#cancel { /* this is the grey layer that appears behind the lightbox content.  It serves only two purposes: make the lightbox content stand out, and serrve as a "close lightbox" button. */
+	display: none; /* it starts out not displayed.  Thic changes to block when the lightbox is up */
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -8,8 +8,8 @@
 	background-color: rgba(0,0,0,0.5);
 	z-index: 1;
 }
-#show {
-	display: none;
+#show { /* this is the div that's on top of everything else and shows loaded content.  it's the 'light' part of the lightbox. */
+	display: none; /* it starts out not displayed.  Thic changes to block when the lightbox is up */
 	position: fixed;
 	top: 10%;
 	left: 10%;
@@ -21,11 +21,12 @@
 	border-radius: 10px;
 	padding: 25px;
 	border: 10px solid transparent;
-    padding: 15px;
-    -webkit-border-image: url(jaggedborder.png) 30% round; /* Safari 3.1-5 */
-    -o-border-image: url(jaggedborder.png) 30% round; /* Opera 11-12.1 */
-    border-image: url(jaggedborder.png) 30% round;	
+    	padding: 15px;
 	overflow-y: auto;
+	/* these next three lines use an image I made for the border, to hopefully give it a pencilly effect. */
+    	-webkit-border-image: url(jaggedborder.png) 30% round; /* Safari */
+    	-o-border-image: url(jaggedborder.png) 30% round; /* Opera */
+    	border-image: url(jaggedborder.png) 30% round;		
 }
 #ground {
 	display: block;
@@ -60,11 +61,12 @@ h1 {
 	height: 20em;
 	background-color: ivory;	
 	border: 10px solid transparent;
-    padding: 15px;
-    -webkit-border-image: url(jaggedborder.png) 30% round; /* Safari 3.1-5 */
-    -o-border-image: url(jaggedborder.png) 30% round; /* Opera 11-12.1 */
-    border-image: url(jaggedborder.png) 30% round;	
+	padding: 15px;
 	overflow-y: auto;
+	/* these next three lines use an image I made for the border, to hopefully give it a pencilly effect. */
+    	-webkit-border-image: url(jaggedborder.png) 30% round; /* Safari */
+    	-o-border-image: url(jaggedborder.png) 30% round; /* Opera */
+    	border-image: url(jaggedborder.png) 30% round;		
 	
 }
 #attribution {
@@ -76,12 +78,14 @@ h1 {
 	text-align: center;
 	background-color: ivory;	
 	border: 10px solid transparent;
-    padding: 25px 20% 25px 5%;
-    -webkit-border-image: url(jaggedborder.png) 30% round; /* Safari 3.1-5 */
-    -o-border-image: url(jaggedborder.png) 30% round; /* Opera 11-12.1 */
-    border-image: url(jaggedborder.png) 30% round;		
+    	padding: 25px 20% 25px 5%; /*i wanted the citation part at the bottom to bleed off the screen.  These weird numbers were me trying to get it to act right when the window was made smaller. */
+	/* these next three lines use an image I made for the border, to hopefully give it a pencilly effect. */
+    	-webkit-border-image: url(jaggedborder.png) 30% round; /* Safari */
+    	-o-border-image: url(jaggedborder.png) 30% round; /* Opera */
+    	border-image: url(jaggedborder.png) 30% round;			
 }
 
+/* everything from here down is for the dropdown menus.  Original code came from 
 #nav, #nav ul { /* all lists */
 	padding: 0;
 	margin: 0;
@@ -101,12 +105,13 @@ h1 {
 	border-radius: 10px;
 	background-color: ivory;
 	border: 10px solid transparent;
-    padding: 15px;
-    -webkit-border-image: url(jagedborder.png) 30% round; /* Safari 3.1-5 */
-    -o-border-image: url(jaggedborder.png) 30% round; /* Opera 11-12.1 */
-    border-image: url(jaggedborder.png) 30% round;	
+	padding: 15px;
 	color: indianred;	
 	font-family: Impact, Charcoal, sans-serif;
+	/* these next three lines use an image I made for the border, to hopefully give it a pencilly effect. */
+    	-webkit-border-image: url(jaggedborder.png) 30% round; /* Safari */
+    	-o-border-image: url(jaggedborder.png) 30% round; /* Opera */
+    	border-image: url(jaggedborder.png) 30% round;		
 }
 
 #nav li ul { /* second-level lists */
