@@ -37,6 +37,7 @@
 body {
 	background-color: ivory;
 	font-family: Tahoma, Geneva, sans-serif;
+	padding-bottom: 10em; /* this is to make a blank space at the bottom of the page, so the attribution div doesn't block content.*/	
 }
 a {
 	color: indianred;
@@ -75,6 +76,7 @@ h1 {
 	bottom: 0;
 	left: -2%;
 	width: 105%;
+	font-size: small;
 	text-align: center;
 	background-color: ivory;	
 	border: 10px solid transparent;
