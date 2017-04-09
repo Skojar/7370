@@ -32,7 +32,7 @@
 	display: block;
 	z-index: -1;
 	clear: both;
-
+	padding-bottom: 10em; /* this is to make a blank space at the bottom of the page, so the attribution div doesn't block content.*/
 }
 body {
 	background-color: white;
