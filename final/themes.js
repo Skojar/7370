@@ -2,7 +2,7 @@
 //this code handles the theme switcher
 
 function changestylesheet(which){ 
-	$( 'link[rel=stylesheet]' ).attr({href : which}); //changes the linked stylesheet 
+	$( '#theme' ).attr({href : which}); //changes the linked stylesheet 
 }	
 
 function changetheme(which){
