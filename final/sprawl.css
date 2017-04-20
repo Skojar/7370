@@ -1,0 +1,45 @@
+#rollerresults {
+	background-color: black;
+	color: lightgreen;
+}
+
+#show { /* this is the div that's on top of everything else and shows loaded content.  it's the 'light' part of the lightbox. */
+	background-color: dimgrey;
+	color: lightgreen;	
+}
+
+div {
+	background-color: dimgrey;
+	color: lightgreen;
+}
+		
+body {
+	background-color: dimgrey;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: lightgreen;
+}
+a {
+	color: chartreuse;
+	font-weight: bold;
+	text-decoration: none;
+}
+a.hover {
+	font-style: italic;
+}
+h1 {
+	color: chartreuse;
+	font-size: x-large;
+	font-family: Impact, Charcoal, sans-serif;
+}
+.item {
+	background-color: dimgrey;	
+}
+#attribution {
+	background-color: dimgrey;	
+}
+
+#nav li { /* all list items in nav*/
+	background-color: dimgrey;
+	color: chartreuse;	
+}
+
