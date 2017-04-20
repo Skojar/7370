@@ -20,13 +20,13 @@ function changetheme(which){
 		case "dungeon_world":
 			//dungeon world
 			document.title = "Dungeon World GM Helper";
-			//changestylesheet("dwstyle.css");
+			changestylesheet("default.css");
 			$( '#navigation' ).load( "./dungeon_world.html #nav" ); //load navigation			
 			break;
 		case "the_sprawl":
 			//the sprawl
 			document.title = "The Sprawl MC Helper";
-			//changestylesheet("spstyle.css");
+			changestylesheet("sprawl.css");
 			break;
 		case "monster_of_the_week":
 			//the sprawl
