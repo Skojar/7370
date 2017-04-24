@@ -1,0 +1,40 @@
+#rollresults,#advisoroutput {
+	background-color: white;
+}
+
+body {
+	background-color: #faf6f2;
+	color: dimgrey;
+	font-family: "Comic Sans MS", cursive, sans-serif;	
+	background-image: url("./notepad.png");
+}
+		
+a {
+	color: chartreuse;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a.hover {
+	font-style: italic;
+}
+h1 {
+	color: deeppink;
+	font-size: x-large;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.item, #toolwrapper, #attribution, #show, #nav li {
+	background-color: #faf6f2;	
+	/* these next three lines use an image I made for the border, to hopefully give it a pencilly effect. */
+    	-webkit-border-image: url(notebookborder.png) 30% round; /* Safari */
+    	-o-border-image: url(notebookborder.png) 30% round; /* Opera */
+    	border-image: url(notebookborder.png) 30% round;		
+}
+
+#nav li { /* all list items in nav*/
+	color: turquoise;	
+	font-weight: bold;
+	text-decoration: none;	
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+

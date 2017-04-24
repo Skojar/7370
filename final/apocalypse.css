@@ -3,13 +3,13 @@
 }
 
 body {
-	background-color: pink;
-	color: red;
-	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;	
+	background-color: white;
+	color: black;
+	font-family: Century Gothic, sans-serif;	
 }
 		
 a {
-	color: purple;
+	color: maroon;
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -18,12 +18,12 @@ a.hover {
 	font-style: italic;
 }
 h1 {
-	color: green;
+	color: maroon;
 	font-size: x-large;
-	font-family: Impact, Charcoal, sans-serif;
+	font-family: ‘Arial Black’, Gadget, sans-serif;
 }
 .item, #toolwrapper, #attribution, #show, #nav li {
-	background-color: lavender;	
+	background-color: white;	
 	/* these next three lines use an image I made for the border, to hopefully give it a pencilly effect. */
     	-webkit-border-image: url(jaggedborder.png) 30% round; /* Safari */
     	-o-border-image: url(jaggedborder.png) 30% round; /* Opera */
@@ -31,9 +31,8 @@ h1 {
 }
 
 #nav li { /* all list items in nav*/
-	color: coral;	
+	color: dimgrey;	
 	font-weight: bold;
 	text-decoration: none;	
-	font-family: Impact, Charcoal, sans-serif;	
+	font-family: ‘Arial Black’, Gadget, sans-serif;
 }
-

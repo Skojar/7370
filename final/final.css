@@ -1,32 +1,69 @@
-#rollerresults {
+#rollresults {
 	float: right;
-	width: 200px;
+	width: 230px;
 	height: 130px;
 	border: solid 1px;
 	overflow: auto;
 	padding: 1em;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+#rollresults img {
+	width: 2em;
+	vertical-align: bottom;	
+}
+#rollbutton {
+	float: left;
+	width: 140px;
+	height: 105px;
+	text-align: center;
+	margin: auto;
+	vertical-align: middle;
+	margin-top: 30px;
+}
+img {
+	border-style: none;
+}
+.bonusbuttons {
+	float: left;
+	width: 45px;
+	height: 45px;
+	
+}
+.bonusbuttons img {
+	margin: 2px;
+	width: 38px;
+}
+
+#twodeesix {
+	vertical-align: middle;
 }
 #rollerwrapper,#advisorwrapper {
 	float: left;
 	width: 500px;
-	height: 150px;
 	padding: 10px;
+}
+div {
+	background-color: transparent;
 }
 #rollerwrapper {
 	margin-bottom: 10px;
+	height: 165px;
 }
 #advisorwrapper {
 	margin-top: 10px;
+	text-align: center;
+	vertical-align: bottom;
 }
 
 #advisoroutput {
-	width: 480px;
-	height: 130px;
+	width: 470px;
+	height: 200px;
 	border: solid 1px;
 	overflow: auto;
 	padding: 1em;
 	margin: 0 auto;
 	float: left;
+	text-align: left;
 }
 
 #cancel { /* this is the grey layer that appears behind the lightbox content.  It serves only two purposes: make the lightbox content stand out, and serrve as a "close lightbox" button. */
@@ -53,10 +90,7 @@
 	border: 10px solid transparent;
     	padding: 15px;
 	overflow-y: auto;
-	/* these next three lines use an image I made for the border, to hopefully give it a pencilly effect. */
-    	-webkit-border-image: url(jaggedborder.png) 30% round; /* Safari */
-    	-o-border-image: url(jaggedborder.png) 30% round; /* Opera */
-    	border-image: url(jaggedborder.png) 30% round;		
+
 }
 #ground {
 	display: block;
@@ -74,16 +108,13 @@
 	float: left;
 	padding: 15px;
 	margin: 0;
-	width: 20em;
+	width: 250px;
 	font-size: medium;	
-	height: 30em;
+	height: 500px;
 	border: 10px solid transparent;
 	padding: 15px;
 	overflow-y: auto;
-	/* these next three lines use an image I made for the border, to hopefully give it a pencilly effect. */
-    	-webkit-border-image: url(jaggedborder.png) 30% round; /* Safari */
-    	-o-border-image: url(jaggedborder.png) 30% round; /* Opera */
-    	border-image: url(jaggedborder.png) 30% round;		
+	
 	
 }
 #toolwrapper { /* just like .item style except width */		/* opportunity to consolidate */
@@ -93,14 +124,11 @@
 	padding: 15px;
 	margin: 0;
 	font-size: medium;	
-	height: 30em;
+	height: 500px;
 	border: 10px solid transparent;
 	padding: 15px;
 	overflow-y: auto;
-	/* these next three lines use an image I made for the border, to hopefully give it a pencilly effect. */
-    	-webkit-border-image: url(jaggedborder.png) 30% round; /* Safari */
-    	-o-border-image: url(jaggedborder.png) 30% round; /* Opera */
-    	border-image: url(jaggedborder.png) 30% round;		
+	
 	
 }
 #attribution {
@@ -113,10 +141,7 @@
 	text-align: center;
 	border: 10px solid transparent;
     	padding: 25px 20% 25px 5%; /*i wanted the citation part at the bottom to bleed off the screen.  These weird numbers were me trying to get it to act right when the window was made smaller. */
-	/* these next three lines use an image I made for the border, to hopefully give it a pencilly effect. */
-    	-webkit-border-image: url(jaggedborder.png) 30% round; /* Safari */
-    	-o-border-image: url(jaggedborder.png) 30% round; /* Opera */
-    	border-image: url(jaggedborder.png) 30% round;			
+		
 }
 
 #theme-selection {
@@ -132,10 +157,22 @@
 	padding: 2em;
 }
 
-li {
+ul,li {
 	list-style-type: none;
+	padding-left: 10px;
 }
 
+.symbol {
+		display: inline-block;
+		width: 1.5em;
+		height: 1.5em;
+		text-align: center;
+		vertical-align: sub;
+		border: 1px solid black;
+		border-radius: 5px;
+		background-color: oldlace;
+		font-size: x-large;
+}
 
 /* everything from here down is for the dropdown menus.  Original code came from suckerfish */
 #nav, #nav ul { /* all lists */
@@ -157,11 +194,6 @@ li {
 	border-radius: 10px;
 	border: 10px solid transparent;
 	padding: 15px;
-	font-family: Impact, Charcoal, sans-serif;
-	/* these next three lines use an image I made for the border, to hopefully give it a pencilly effect. */
-    	-webkit-border-image: url(jaggedborder.png) 30% round; /* Safari */
-    	-o-border-image: url(jaggedborder.png) 30% round; /* Opera */
-    	border-image: url(jaggedborder.png) 30% round;		
 }
 
 #nav li ul { /* second-level lists */

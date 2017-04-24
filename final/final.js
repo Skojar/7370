@@ -1,5 +1,6 @@
 <!-- //Javascript for final project:
 
+
 $(document).ready(function(){
     $( '#cancel' ).click(function(){ //if you click the cancel div, it and the show div are hidden.
 		$( '#cancel' ).css({"display":"none"});

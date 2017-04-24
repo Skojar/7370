@@ -1,45 +1,40 @@
-#rollerresults {
-	background-color: black;
-	color: lightgreen;
+#rollresults,#advisoroutput {
+	background-color: #383838;
 }
 
-#show { /* this is the div that's on top of everything else and shows loaded content.  it's the 'light' part of the lightbox. */
-	background-color: dimgrey;
-	color: lightgreen;	
-}
-
-div {
-	background-color: dimgrey;
-	color: lightgreen;
+body {
+	background-color: darkslategrey;
+	color: #acea00;
+	font-family: ‘Courier New’, Courier, monospace;	
+	background-image: url("./grid.png");
 }
 		
-body {
-	background-color: dimgrey;
-	font-family: Tahoma, Geneva, sans-serif;
-	color: lightgreen;
-}
 a {
 	color: chartreuse;
 	font-weight: bold;
 	text-decoration: none;
 }
+
 a.hover {
 	font-style: italic;
 }
 h1 {
-	color: chartreuse;
+	color: deeppink;
 	font-size: x-large;
-	font-family: Impact, Charcoal, sans-serif;
+	font-family: ‘Lucida Console’, Monaco, monospace;
 }
-.item {
-	background-color: dimgrey;	
-}
-#attribution {
-	background-color: dimgrey;	
+.item, #toolwrapper, #attribution, #show, #nav li {
+	background-color: #383838;	
+	/* these next three lines use an image I made for the border, to hopefully give it a pencilly effect. */
+    	-webkit-border-image: url(crtborder.png) 30% round; /* Safari */
+    	-o-border-image: url(crtborder.png) 30% round; /* Opera */
+    	border-image: url(crtborder.png) 30% round;		
 }
 
 #nav li { /* all list items in nav*/
-	background-color: dimgrey;
 	color: chartreuse;	
+	font-weight: bold;
+	text-decoration: none;	
+	font-family: ‘Lucida Console’, Monaco, monospace;	
 }
 

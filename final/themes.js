@@ -3,6 +3,7 @@
 
 function changestylesheet(which){ 
 	$( '#theme' ).attr({href : which}); //changes the linked stylesheet 
+	//$( 'link[rel=stylesheet]' ).attr({href : which}); //changes the linked stylesheet 	
 }	
 
 function changetheme(which){
@@ -15,13 +16,14 @@ function changetheme(which){
 		case "apocalypse_world":
 			//apocalypse world
 			document.title = "Apocalypse World MC Helper";
-			//changestylesheet("awstyle.css");
+			changestylesheet("apocalypse.css");
 			break;
 		case "dungeon_world":
 			//dungeon world
 			document.title = "Dungeon World GM Helper";
 			changestylesheet("default.css");
-			$( '#navigation' ).load( "./dungeon_world.html #nav" ); //load navigation			
+			$( '#navigation' ).load( "./dungeon_world.html #nav" ); //load navigation	
+			$( '#citation').load( "./dungeon_world.html #cite"); //load citation info
 			break;
 		case "the_sprawl":
 			//the sprawl
@@ -31,7 +33,7 @@ function changetheme(which){
 		case "monster_of_the_week":
 			//the sprawl
 			document.title = "Monster of the Week MC Helper";
-			//changestylesheet("mwstyle.css");			
+			changestylesheet("moweek.css");			
 			break;
 		case "urban_shadows":
 			//the sprawl
