@@ -16,6 +16,8 @@ function changetheme(which){
 		case "apocalypse_world":
 			//apocalypse world
 			document.title = "Apocalypse World MC Helper";
+			$( '#navigation' ).load( "./apocalypse_world.html #nav" ); //load navigation	
+			$( '#citation').load( "./apocalypse_world.html #cite"); //load citation info			
 			changestylesheet("apocalypse.css");
 			break;
 		case "dungeon_world":
@@ -32,7 +34,7 @@ function changetheme(which){
 			break;
 		case "monster_of_the_week":
 			//the sprawl
-			document.title = "Monster of the Week MC Helper";
+			document.title = "Monster of the Week Keeper Helper";
 			changestylesheet("moweek.css");			
 			break;
 		case "urban_shadows":

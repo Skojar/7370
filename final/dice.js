@@ -73,24 +73,24 @@ function showresult(what){
 
 function showdie(symbol, color){
 	if(!color) var color = "black";
-	return "<span class=\"result\"><span class=\"symbol\" style=\"color: " + color + ";\">" + symbol + "</span></span>";	
+	return "<span class=\"result\"><span class=\"symbol " + color + "\">" + symbol + "</span></span>";	
 }
 function outcome_icon(outcome){
 	switch (outcome) {
 		case 'pbta_failure': 
-			color = "red";
+			color = "failure";
 			icon = "&#x2716";
 			break;
 		case 'pbta_partial':
-			color = "grey";
+			color = "partialsuccess";
 			icon = "&#x2753";
 			break;
 		case 'pbta_success':
-			color = "green";
+			color = "success";
 			icon = "&#x2605";
 			break;
 		case 'pbta_advanced':
-			color = "gold";
+			color = "advancedsuccess";
 			icon = "&#x265b";
 			break;
 	}

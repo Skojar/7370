@@ -108,7 +108,7 @@ div {
 	float: left;
 	padding: 15px;
 	margin: 0;
-	width: 250px;
+	width: 300px;
 	font-size: medium;	
 	height: 500px;
 	border: 10px solid transparent;
@@ -160,6 +160,25 @@ div {
 ul,li {
 	list-style-type: none;
 	padding-left: 10px;
+	margin-left: 10px;
+	text-indent: -10px;
+}
+
+.key {
+	text-align: center;
+	margin: 0 auto;
+}
+.done:before {
+	content: '\2611\20';
+	color: green;
+}
+.todo:before {
+	content: '\2610\20';
+	color: blue;
+}
+.fail:before {
+	content: '\2612\20';
+	color: red;
 }
 
 .symbol {
@@ -172,6 +191,31 @@ ul,li {
 		border-radius: 5px;
 		background-color: oldlace;
 		font-size: x-large;
+		text-indent: 0;
+}
+.result {
+	margin: 0 auto;
+}
+
+.failure {
+	color: red;
+}
+
+.partialsuccess {
+	color: grey;
+}
+
+.success {
+	color: green;
+}
+
+.advancedsuccess {
+	color: gold;
+}
+
+.suggestion {
+	margin-left: 2em;
+	text-indent: -2em;
 }
 
 /* everything from here down is for the dropdown menus.  Original code came from suckerfish */
