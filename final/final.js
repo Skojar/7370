@@ -27,7 +27,8 @@ function showit(what){ //this is called by onclick attributes, in this case I th
 	$( '#show' ).load(what); //load the content specified by the onclick into the show div, then
 	//make the cancel and show divs visible
 	$( '#cancel' ).css({"display":"block"});
-	$( '#show' ).css({"display":"block"});			
+	$( '#show' ).css({"display":"block"});	
+	console.log($( '#show' ).html().length;
 }
 
 //-->
