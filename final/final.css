@@ -1,3 +1,9 @@
+#pagetitle {
+	display: block;
+	width: 100%;
+	font-size: x-large;
+	text-align: center;
+}
 #rollresults {
 	float: right;
 	width: 230px;
