@@ -45,6 +45,7 @@ function changetheme(which){
 		default:
 			//blank
 	}
+	$( '#pagetitle' ).html(document.title);
 }
 
 //-->
