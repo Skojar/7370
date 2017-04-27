@@ -29,6 +29,7 @@ function showit(what){ //this is called by onclick attributes, in this case I th
 	$( '#cancel' ).css({"display":"block"});
 	$( '#show' ).css({"display":"block"});	
 	console.log($( '#show' ).html());
+	console.log('key');
 }
 
 //-->
