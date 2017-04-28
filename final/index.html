@@ -48,19 +48,17 @@
 				<h1 class="done">Navigation</h1>
 				<p>Drop-down navigation menus are closely modeled after <a href="http://www.htmldog.com/articles/suckerfish/dropdowns/">suckerfish dropdowns</a>.</p>
 			</div>
-
 			
-			<div id="toolwrapper" title="Toolkit"> <!-- this is to make the tools act like the item divs -->
-			
+			<div class="item" title="Dice Roller">
 				<div id="rollerwrapper"> <!-- this div is for the dice roller -->
-					<div id="rollresults"> </div>
+					
 					<div class="bonusbuttons">
 						<img src="./minusone.png" alt="roll 2d6 minus 1" onclick="basicroll(-1);" /><br />
 						<img src="./minustwo.png" alt="roll 2d6 minus 2" onclick="basicroll(-2);" /><br />
 						<img src="./minusthree.png" alt="roll 2d6 minus 3" onclick="basicroll(-3);" />
 					</div>
 					<div id="rollbutton">
-						<img id="twodeesix" src="./2d6.png" alt="roll 2d6" onclick="basicroll();" width=100px />
+						<img id="twodeesix" src="./2d6.png" alt="roll 2d6" onclick="basicroll();" width=100 />
 					</div>
 					<div class="bonusbuttons">
 						<img src="./plusone.png" alt="roll 2d6 plus 1" onclick="basicroll(1);" /><br />
@@ -68,7 +66,28 @@
 						<img src="./plusthree.png" alt="roll 2d6 plus 3" onclick="basicroll(3);" />
 					</div>
 				</div>
-				
+				<div id="rollresults"> </div>
+			</div>
+			
+			<div id="toolwrapper" title="Toolkit"> <!-- this is to make the tools act like the item divs -->
+			<!--
+				<div id="rollerwrapper"> 
+					<div id="rollresults"> </div>
+					<div class="bonusbuttons">
+						<img src="./minusone.png" alt="roll 2d6 minus 1" onclick="basicroll(-1);" /><br />
+						<img src="./minustwo.png" alt="roll 2d6 minus 2" onclick="basicroll(-2);" /><br />
+						<img src="./minusthree.png" alt="roll 2d6 minus 3" onclick="basicroll(-3);" />
+					</div>
+					<div id="rollbutton">
+						<img id="twodeesix" src="./2d6.png" alt="roll 2d6" onclick="basicroll();" width=100 />
+					</div>
+					<div class="bonusbuttons">
+						<img src="./plusone.png" alt="roll 2d6 plus 1" onclick="basicroll(1);" /><br />
+						<img src="./plustwo.png" alt="roll 2d6 plus 2" onclick="basicroll(2);" /><br />
+						<img src="./plusthree.png" alt="roll 2d6 plus 3" onclick="basicroll(3);" />
+					</div>
+				</div>
+			-->	
 				<div id="advisorwrapper"> <!-- this div is for the move advisor -->
 					<div id="advisoroutput"> </div>
 					<span onclick="suggest();" id="inspirebutton"><h1>Generate New Move Suggestion</h1></span>
@@ -84,119 +103,137 @@
 				</div>
 				<h1>Project Task Checklist</h1>
 				<ul>
-					<li><strong>Critical Features</strong></li>
-					<ul>
-						<li class="done">Theme Switcher</li>
-						<li class="done">Dice Roller</li>
-						<li class="done">Move Suggester</li>
-						<li class="done">Rules Reference</li>
-					</ul>				
-					<li><strong>Evaluation Criteria</strong></li>
-					<ul>
-						<li class="done">contained in a directory named "final"</li>
-						<li class="done">at least four links, resulting in five 'pages'</li>
-						<li class="done">Contact information</li>
-						<li class="todo">relevant credentials and affiliation information</li>
-						<li class="todo">unique title for each page (repeated in body)</li>
-						<li class="done">clear and concise navigation</li>
-						<li class="done">consistent page design</li>
-						<li class="done">user friendly design</li>
-						<li class="done">visually appealing</li>
-						<li class="done">common theme or subject</li>
-						<li class="fail">style and layout use a single external style sheet</li>
-						<li class="done">at leat two new dynamic javascript effects</li>
-						<li class="done">comment thoroughly</li>
-						<li class="todo">validate in IE</li>
-						<li class="todo">validate in Chrome</li>
-						<li class="todo">validate in Firefox</li>
-						<li class="todo">validate HTML and CSS</li>
-					</ul>
-					<li><strong>HTMLize Content</strong></li>
-					<ul>
-						<li>Apocalypse World</li>
+					<li><strong>Critical Features</strong>
 						<ul>
-							<li class="done">Theme Style Sheet</li>
-							<li class="done">Border Image</li>
-							<li class="todo">Content Document</li>
-							<ul>
-								<li class="done">Menus</li>
-								<li class="todo">Moves and Rules</li>
-								<li class="done">Attribution</li>
-							</ul>
+							<li class="done">Theme Switcher</li>
+							<li class="done">Dice Roller</li>
+							<li class="done">Move Suggester</li>
+							<li class="done">Rules Reference</li>
+						</ul>	
+					</li>
+					<li><strong>Evaluation Criteria</strong>
+						<ul>
+							<li class="done">contained in a directory named "final"</li>
+							<li class="done">at least four links, resulting in five 'pages'</li>
+							<li class="done">Contact information</li>
+							<li class="todo">relevant credentials and affiliation information</li>
+							<li class="todo">unique title for each page (repeated in body)</li>
+							<li class="done">clear and concise navigation</li>
+							<li class="done">consistent page design</li>
+							<li class="done">user friendly design</li>
+							<li class="done">visually appealing</li>
+							<li class="done">common theme or subject</li>
+							<li class="fail">style and layout use a single external style sheet</li>
+							<li class="done">at leat two new dynamic javascript effects</li>
+							<li class="done">comment thoroughly</li>
+							<li class="todo">validate in IE</li>
+							<li class="todo">validate in Chrome</li>
+							<li class="todo">validate in Firefox</li>
+							<li class="todo">validate HTML and CSS</li>
 						</ul>
-						<li>Dungeon World</li>
+					</li>
+					<li><strong>HTMLize Content</strong>
 						<ul>
-							<li class="todo">Theme Style Sheet</li>
-							<li class="done">Border Image</li>
-							<li class="todo">Content Document</li>
-							<ul>
-								<li class="done">Menus</li>
-								<li class="todo">Moves and Rules</li>
-								<li class="done">Attribution</li>
-							</ul>
-						</ul>						
-						<li>The Sprawl</li>
+							<li>Apocalypse World
+								<ul>
+									<li class="done">Theme Style Sheet</li>
+									<li class="done">Border Image</li>
+									<li class="todo">Content Document
+										<ul>
+											<li class="done">Menus</li>
+											<li class="todo">Moves and Rules</li>
+											<li class="done">Attribution</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>Dungeon World
+								<ul>
+									<li class="todo">Theme Style Sheet</li>
+									<li class="done">Border Image</li>
+									<li class="todo">Content Document
+										<ul>
+											<li class="done">Menus</li>
+											<li class="todo">Moves and Rules</li>
+											<li class="done">Attribution</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>The Sprawl
+								<ul>
+									<li class="done">Theme Style Sheet</li>
+									<li class="done">Border Image</li>
+									<li class="todo">Content Document
+										<ul>
+											<li class="todo">Menus</li>
+											<li class="todo">Moves and Rules</li>
+											<li class="todo">Attribution</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>Monster of the Week
+								<ul>
+									<li class="done">Theme Style Sheet</li>
+									<li class="done">Border Image</li>
+									<li class="todo">Content Document
+										<ul>
+											<li class="todo">Menus</li>
+											<li class="todo">Moves and Rules</li>
+											<li class="todo">Attribution</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>Uncharted Worlds
+								<ul>
+									<li class="done">Theme Style Sheet</li>
+									<li class="done">Border Image</li>
+									<li class="todo">Content Document
+										<ul>
+											<li class="todo">Menus</li>
+											<li class="todo">Moves and Rules</li>
+											<li class="todo">Attribution</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><strong>Stretch Goals</strong>
 						<ul>
-							<li class="done">Theme Style Sheet</li>
-							<li class="done">Border Image</li>
-							<li class="todo">Content Document</li>
-							<ul>
-								<li class="todo">Menus</li>
-								<li class="todo">Moves and Rules</li>
-								<li class="todo">Attribution</li>
-							</ul>
-						</ul>						
-						<li>Monster of the Week</li>
-						<ul>
-							<li class="done">Theme Style Sheet</li>
-							<li class="done">Border Image</li>
-							<li class="todo">Content Document</li>
-							<ul>
-								<li class="todo">Menus</li>
-								<li class="todo">Moves and Rules</li>
-								<li class="todo">Attribution</li>
-							</ul>
-						</ul>						
-						<li>Uncharted Worlds</li>
-						<ul>
-							<li class="todo">Theme Style Sheet</li>
-							<li class="todo">Border Image</li>
-							<li class="todo">Content Document</li>
-							<ul>
-								<li class="todo">Menus</li>
-								<li class="todo">Moves and Rules</li>
-								<li class="todo">Attribution</li>
-							</ul>
-						</ul>						
-					</ul>
-					<li><strong>Stretch Goals</strong></li>
-					<ul>
-						<li>Count-down Clocks</li>
-						<ul>
-							<li class="fail">Core Functionality</li>
-							<li class="fail">Basic Styling</li>
-							<li class="fail">Functionality</li>
-						</ul>						
-						<li>Retain State(cookies)</li>
-						<ul>
-							<li class="fail">Core Functionality</li>
-							<li class="fail">Basic Styling</li>
-							<li class="fail">Full Functionality</li>
-						</ul>						
-						<li>Clear State</li>
-						<ul>
-							<li class="fail">Core Functionality</li>
-							<li class="fail">Basic Styling</li>
-							<li class="fail">Full Functionality</li>
-						</ul>						
-						<li>Random Name Generator</li>
-						<ul>
-							<li class="done">Acquire API</li>
-							<li class="fail">Core Functionality</li>
-							<li class="fail">Basic Styling</li>
-							<li class="fail">Full Functionality</li>
-						</ul>						
-					</ul>					
+							<li>Count-down Clocks
+								<ul>
+									<li class="fail">Core Functionality</li>
+									<li class="fail">Basic Styling</li>
+									<li class="fail">Functionality</li>
+								</ul>
+							</li>
+							<li>Retain State(cookies)
+								<ul>
+									<li class="fail">Core Functionality</li>
+									<li class="fail">Basic Styling</li>
+									<li class="fail">Full Functionality</li>
+								</ul>
+							</li>
+							<li>Clear State
+								<ul>
+									<li class="fail">Core Functionality</li>
+									<li class="fail">Basic Styling</li>
+									<li class="fail">Full Functionality</li>
+								</ul>		
+							</li>
+							<li>Random Name Generator
+								<ul>
+									<li class="done">Acquire API</li>
+									<li class="fail">Core Functionality</li>
+									<li class="fail">Basic Styling</li>
+									<li class="fail">Full Functionality</li>
+								</ul>	
+							</li>	
+						</ul>
+					</li>
 				</ul>
 			</div>			
 			
