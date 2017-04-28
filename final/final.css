@@ -7,11 +7,12 @@
 #rollresults {
 	float: right;
 	width: 230px;
-	height: 130px;
+	height: 230px;
 	border: solid 1px;
 	overflow: auto;
 	padding: 1em;
 	font-family: Tahoma, Geneva, sans-serif;
+	clear: both;
 }
 #rollresults img {
 	width: 2em;
@@ -43,11 +44,7 @@ img {
 #twodeesix {
 	vertical-align: middle;
 }
-#rollerwrapper,#advisorwrapper {
-	float: left;
-	width: 500px;
-	padding: 10px;
-}
+
 div {
 	background-color: transparent;
 }
