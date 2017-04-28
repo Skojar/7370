@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<div id="about" title="About this site"> <!-- this div is for information about the site, including a contact link -->
+	<h1>About</h1>
+	<p>This site is a project created for <a href="http://catalog.missouri.edu/courseofferings/is_lt/">ISLT 7370, Intermediate Web Development</a> at the University of Missouri. <a href="mailto:rebstockm@missouri.edu">Email the author</a> with any questions or concerns.</p>
+	<p>Theme switching, rules reference, dice roller, and move suggester demonstrate techniques utilizing CSS, JQuery, and AJAX.</p>
+	<h1 class="done">Theme Switcher</h1>
+	<p>The theme switcher utilizes modular external style sheets.  One with basic structural styling is always linked.  The other, containing color, font, background images urls, and other theme-specific styling is in a set of additional style sheets, one for each theme.  They're traded out using JQuery.  If the checkbox is checked, the color scheme and images don't change.</p>
+	<h1 class="todo">Rules Reference</h1>
+	<p>Each game has an external html file with navigation items, citation text, and individual rules, portions of which are loaded dynamically with AJAX by the theme switcher or through the dropdown menus.</p>
+	<h1 class="done">Dice Roller</h1>
+	<p>This is a straightforward javascript dice function, using images, css, and unicode characters to generate PbtA-style dice results:</p>
+	<ul>
+		<li><span class="result"><span class="symbol failure">&#x2716;</span></span> = Failure</li>
+		<li><span class="result"><span class="symbol partialsuccess">&#x2753;</span></span> = Partial Success</li>
+		<li><span class="result"><span class="symbol success">&#x2605;</span></span> = Success</li>
+		<li><span class="result"><span class="symbol advancedsuccess">&#x265b;</span></span> = Advanced Success</li>
+	</ul>
+	<h1 class="done">Move Suggester</h1>
+	<p>Another basic javascript function, selecting a random element from an array and displaying it, either on demand or on a timer.  The only vaguely interesting part is that the suggestions won't immediately repeat.</p>
+	<h1 class="done">Navigation</h1>
+	<p>Drop-down navigation menus are closely modeled after <a href="http://www.htmldog.com/articles/suckerfish/dropdowns/">suckerfish dropdowns</a>.</p>
+</div>
+
+<div id="checklist" title="Project Checklist"> <!-- this div is a checklist of tasks related to production of the site -->
+	<h1>Project Task Checklist</h1>
+	<div class="key">
+		<span class="todo">To Do</span>
+		<span class="done">Done</span>
+		<span class="fail">Issue</span>
+	</div>				
+	<ul>
+		<li><strong>Critical Features</strong>
+			<ul>
+				<li class="done">Theme Switcher</li>
+				<li class="done">Dice Roller</li>
+				<li class="done">Move Suggester</li>
+				<li class="done">Rules Reference</li>
+			</ul>	
+		</li>
+		<li><strong>Evaluation Criteria</strong>
+			<ul>
+				<li class="done">contained in a directory named "final"</li>
+				<li class="done">at least four links, resulting in five 'pages'</li>
+				<li class="done">Contact information</li>
+				<li class="fail">relevant credentials and affiliation information</li>
+				<li class="done">unique title for each page (repeated in body)</li>
+				<li class="done">clear and concise navigation</li>
+				<li class="done">consistent page design</li>
+				<li class="done">user friendly design</li>
+				<li class="done">visually appealing</li>
+				<li class="done">common theme or subject</li>
+				<li class="fail">style and layout use a single external style sheet</li>
+				<li class="done">at leat two new dynamic javascript effects</li>
+				<li class="done">comment thoroughly</li>
+				<li class="todo">validate in IE</li>
+				<li class="todo">validate in Chrome</li>
+				<li class="todo">validate in Firefox</li>
+				<li class="todo">validate HTML and CSS</li>
+			</ul>
+		</li>
+		<li><strong>HTMLize Content</strong>
+			<ul>
+				<li class="done">Apocalypse World
+					<ul>
+						<li class="done">Theme Style Sheet</li>
+						<li class="done">Border Image</li>
+						<li class="done">Content Document
+							<ul>
+								<li class="done">Menus</li>
+								<li class="done">Moves and Rules</li>
+								<li class="done">Attribution</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="todo">Dungeon World
+					<ul>
+						<li class="todo">Theme Style Sheet</li>
+						<li class="done">Border Image</li>
+						<li class="todo">Content Document
+							<ul>
+								<li class="done">Menus</li>
+								<li class="todo">Moves and Rules</li>
+								<li class="done">Attribution</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="done">The Sprawl
+					<ul>
+						<li class="done">Theme Style Sheet</li>
+						<li class="done">Border Image</li>
+						<li class="done">Content Document
+							<ul>
+								<li class="done">Menus</li>
+								<li class="done">Moves and Rules</li>
+								<li class="done">Attribution</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="done">Monster of the Week
+					<ul>
+						<li class="done">Theme Style Sheet</li>
+						<li class="done">Border Image</li>
+						<li class="done">Content Document
+							<ul>
+								<li class="done">Menus</li>
+								<li class="done">Moves and Rules</li>
+								<li class="done">Attribution</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="done">Uncharted Worlds
+					<ul>
+						<li class="done">Theme Style Sheet</li>
+						<li class="done">Border Image</li>
+						<li class="done">Content Document
+							<ul>
+								<li class="done">Menus</li>
+								<li class="done">Moves and Rules</li>
+								<li class="done">Attribution</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li><strong>Stretch Goals</strong>
+			<ul>
+				<li>Count-down Clocks
+					<ul>
+						<li class="fail">Core Functionality</li>
+						<li class="fail">Basic Styling</li>
+						<li class="fail">Functionality</li>
+					</ul>
+				</li>
+				<li>Retain State(cookies)
+					<ul>
+						<li class="fail">Core Functionality</li>
+						<li class="fail">Basic Styling</li>
+						<li class="fail">Full Functionality</li>
+					</ul>
+				</li>
+				<li>Clear State
+					<ul>
+						<li class="fail">Core Functionality</li>
+						<li class="fail">Basic Styling</li>
+						<li class="fail">Full Functionality</li>
+					</ul>		
+				</li>
+				<li>Random Name Generator
+					<ul>
+						<li class="done">Acquire API</li>
+						<li class="fail">Core Functionality</li>
+						<li class="fail">Basic Styling</li>
+						<li class="fail">Full Functionality</li>
+					</ul>	
+				</li>	
+			</ul>
+		</li>
+	</ul>
+</div>
+
+		
+
+</html>
