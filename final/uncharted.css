@@ -21,7 +21,7 @@ a.hover {
 h1 {
 	color: #fe0052;
 	font-size: x-large;
-	font-family: ‘Lucida Console’, Monaco, monospace;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 .item, #toolwrapper, #attribution, #show, #nav li {
 	background-color: transparent;	
@@ -35,5 +35,5 @@ h1 {
 	color: deepskyblue;	
 	font-weight: bold;
 	text-decoration: none;	
-	font-family: ‘Lucida Console’, Monaco, monospace;	
+	font-family: "Trebuchet MS", Helvetica, sans-serif;	
 }
