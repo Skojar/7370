@@ -7,7 +7,7 @@
 #rollresults {
 	float: left;
 	margin: auto;
-	width: 230px;
+	width: 270px;
 	height: 230px;
 	border: solid 1px;
 	overflow: auto;
@@ -50,7 +50,7 @@ div {
 	background-color: transparent;
 }
 #rollerwrapper {
-	margin-bottom: 10px;
+	margin: 10px auto;
 	height: 165px;
 }
 #advisorwrapper {
@@ -61,7 +61,7 @@ div {
 
 #advisoroutput {
 	width: 270px;
-	height: 400px;
+	height: 390px;
 	border: solid 1px;
 	overflow: auto;
 	padding: 1em;
