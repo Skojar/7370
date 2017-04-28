@@ -38,6 +38,12 @@
 img {
 	border-style: none;
 }
+dt {
+	font-weight: bold;
+}
+dd {
+	font-style: italic;
+}
 .bonusbuttons {
 	float: left;
 	width: 45px;
