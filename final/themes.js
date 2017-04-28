@@ -40,6 +40,8 @@ function changetheme(which){
 		case "uncharted_worlds":
 			//the sprawl
 			document.title = "Uncharted Worlds GM Helper";
+			$( '#navigation' ).load( "./uncharted_worlds.html #nav" ); //load navigation	
+			$( '#citation').load( "./uncharted_worlds.html #cite"); //load citation info				
 			changestylesheet("uncharted.css");	
 			break;
 		default:
