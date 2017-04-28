@@ -1,0 +1,39 @@
+#rollresults,#advisoroutput {
+	background-color: black;
+}
+
+body {
+	background-color: black;
+	color: skyblue;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background-image: url("./starfield.jpg");
+}
+		
+a {
+	color: #fe0052;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a.hover {
+	font-style: italic;
+}
+h1 {
+	color: #fe0052;
+	font-size: x-large;
+	font-family: ‘Lucida Console’, Monaco, monospace;
+}
+.item, #toolwrapper, #attribution, #show, #nav li {
+	background-color: transparent;	
+	/* these next three lines use an image I made for the border, to hopefully give it a pencilly effect. */
+    	-webkit-border-image: url(crtborder.png) 30% round; /* Safari */
+    	-o-border-image: url(crtborder.png) 30% round; /* Opera */
+    	border-image: url(crtborder.png) 30% round;		
+}
+
+#nav li { /* all list items in nav*/
+	color: deepskyblue;	
+	font-weight: bold;
+	text-decoration: none;	
+	font-family: ‘Lucida Console’, Monaco, monospace;	
+}
