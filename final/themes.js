@@ -12,37 +12,40 @@ function changetheme(which){
 	//	theme style sheet
 	//	menu bar
 	//	citation
+	var keep = $( '#keeptheme' ).is(':checked');
 	switch(which){
 		case "apocalypse_world":
 			//apocalypse world
 			document.title = "Apocalypse World MC Helper";
 			$( '#navigation' ).load( "./apocalypse_world.html #nav" ); //load navigation	
 			$( '#citation').load( "./apocalypse_world.html #cite"); //load citation info			
-			changestylesheet("apocalypse.css");
+			if(!keep) changestylesheet("apocalypse.css");
 			break;
 		case "dungeon_world":
 			//dungeon world
 			document.title = "Dungeon World GM Helper";
-			changestylesheet("dungeon.css");
+			if(!keep) changestylesheet("dungeon.css");
 			$( '#navigation' ).load( "./dungeon_world.html #nav" ); //load navigation	
 			$( '#citation').load( "./dungeon_world.html #cite"); //load citation info
 			break;
 		case "the_sprawl":
 			//the sprawl
 			document.title = "The Sprawl MC Helper";
-			changestylesheet("sprawl.css");
+			if(!keep) changestylesheet("sprawl.css");
 			break;
 		case "monster_of_the_week":
 			//the sprawl
 			document.title = "Monster of the Week Keeper Helper";
-			changestylesheet("monster.css");			
+			$( '#navigation' ).load( "./monster_week.html #nav" ); //load navigation	
+			$( '#citation').load( "./monster_week.html #cite"); //load citation info				
+			if(!keep) changestylesheet("monster.css");			
 			break;
 		case "uncharted_worlds":
 			//the sprawl
 			document.title = "Uncharted Worlds GM Helper";
 			$( '#navigation' ).load( "./uncharted_worlds.html #nav" ); //load navigation	
 			$( '#citation').load( "./uncharted_worlds.html #cite"); //load citation info				
-			changestylesheet("uncharted.css");	
+			if(!keep) changestylesheet("uncharted.css");	
 			break;
 		default:
 			//blank
