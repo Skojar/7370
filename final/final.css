@@ -168,6 +168,7 @@ div {
 	border: 10px solid transparent;
 	padding: 50px;
 	clear: both;
+	margin: auto;
 }
 #citation, #pbta {
 	display: inline-block;
