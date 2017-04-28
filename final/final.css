@@ -100,6 +100,7 @@ div {
 	border: 10px solid transparent;
     	padding: 15px;
 	overflow-y: auto;
+	height: 500px;
 
 }
 #show ul li {
