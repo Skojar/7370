@@ -28,6 +28,7 @@ function showit(what){ //this is called by onclick attributes, in this case I th
 	//make the cancel and show divs visible
 	$( '#cancel' ).css({"display":"block"});
 	$( '#show' ).css({"display":"block"});	
+	console.log(parseFloat( $( '#show' ).css( "height" ) ));
 	if( parseFloat( $( '#show' ).css( "height" ) ) > 500 ) $( '#show' ).css( "height" , 500 ); //max height of show div is the height of .item divs.
 }
 
