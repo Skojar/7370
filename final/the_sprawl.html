@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- this document contains content to be dynamically referenced -->
+<ul id="nav">
+	<li>Action Moves
+		<ul>
+			<li onclick="showit('./the_sprawl.html #underpressure');" >Act Under Pressure</li>
+			<li onclick="showit('./the_sprawl.html #mixitup');" >Mix It Up</li>						
+			<li onclick="showit('./the_sprawl.html #takeharm');" >Take Harm</li>			
+			<li onclick="showit('./the_sprawl.html #firstaid');" >Apply First Aid</li>
+			<li onclick="showit('./the_sprawl.html #buyfarm');" >Acquire Agricultural Property</li>			
+		</ul>
+	</li>
+	<li>Social Moves
+		<ul>
+			<li onclick="showit('./the_sprawl.html #assess');" >Assess</li>	
+			<li onclick="showit('./the_sprawl.html #fasttalk');" >Fast Talk</li>	
+			<li onclick="showit('./the_sprawl.html #interfere');" >Help or Interfere</li>	
+			<li onclick="showit('./the_sprawl.html #hardball');" >Play Hardball</li>			
+		</ul>
+	</li>
+	<li>Legwork Moves
+		<ul>
+			<li onclick="showit('./the_sprawl.html #research');" >Research</li>			
+			<li onclick="showit('./the_sprawl.html #hitstreet');" >Hit the Street</li>			
+			<li onclick="showit('./the_sprawl.html #underknife');" >Go Under the Knife</li>
+			<li onclick="showit('./the_sprawl.html #getjob');" >Get the Job</li>
+			<li onclick="showit('./the_sprawl.html #getpaid');" >Getting Paid</li>		
+		</ul>
+	</li>
+</ul>
+<div id="underpressure"> 
+	<h1>Act Under Pressure</h1>
+	<p>When you race against the clock, act while in danger or act to avoid danger, roll Cool.</p>
+	<p>10+: you do it, no problem.</p>
+	<p>7-9: you stumble, hesitate, or flinch: the MC will offer you a worse outcome, hard bargain, or ugly choice.</p>
+</div>
+<div id="firstaid"> 
+	<h1>Apply First Aid</h1>
+	<p>When you treat someone’s wounds using appropriate medical equipment, roll Cool.</p>
+	<p>10+: if their Harm Clock is at 2100 or less, reduce their harm by two segments. If their Harm Clock is at more than 2100, reduce their harm by one segment.</p>
+	<p>7-9: reduce their harm by one segment. If their Harm Clock is still at more than 2100, they take -1 ongoing until they receive proper medical attention.</p>
+</div>
+<div id="assess"> 
+	<h1>Assess</h1>
+	<p>When you closely study a person, place or situation, or when you quickly size up an opponent or a charged situation, roll Edge.</p>
+	<p>10+: gain 3 hold.</p>
+	<p>7-9: gain 1 hold.</p>
+	<p>In the ensuing action, you may spend 1 hold at any time to ask the MC a question from the list below if your examination could have revealed the answer. The MC may ask you questions to clarify your intent. Take +1 forward when acting on the answers.
+		<ul>
+			<li>What potential complication do I need to be wary of?</li>
+			<li>What do I notice despite an effort to conceal it?</li>
+			<li>How is ______ vulnerable to me?</li>
+			<li>How can I avoid trouble or hide here?</li>
+			<li>What is my best way in/way out/way past?</li>
+			<li>Where can I gain the most advantage?</li>
+			<li>Who or what is my biggest threat in this situation?</li>
+			<li>Who or what is in control here?</li>
+		</ul>
+	</p>
+</div>
+<div id="hardball"> 
+	<h1>Play Hardball</h1>
+	<p>When you get in someone’s face threatening violence and you intend to carry through, roll Edge.</p>
+	<p>10+: NPCs do what you want. PCs choose: do what you want, or suffer the established consequences.</p>
+	<p>7–9: For NPCs, the MC chooses 1:
+		<ul>
+			<li>They attempt to remove you as a threat, but not before suffering the established consequences.</li>
+			<li>They do it, but they want payback. Add them as a Threat.</li>
+			<li>They do it, but tell someone all about it. Advance the appropriate Mission Clock.</li>
+		</ul>
+	</p>
+	<p>PCs choose: do what you want, or suffer the established consequences. They gain +1 forward to act against you.</p>
+</div>
+<div id="buyfarm"> 
+	<h1>Acquire Agricultural Property</h1>
+	<p>When you hit 0000 on your Harm Clock, roll Meat.</p>
+	<p>10+: you survive until the medics arrive.</p>
+	<p>7-9: you survive at a cost. Pick one: <i>+owned</i>, substandard treatment (-1 to a stat), cyberware damage (give one piece of cyberware a negative tag).</p>
+	<p>6-: you bleed out on the street.</p>
+</div>
+<div id="mixitup"> 
+	<h1>Mix It Up</h1>
+	<p>When you use violence against an armed force to seize control of an objective, state that objective and roll Meat.</p>
+	<p>7+: you achieve your objective.</p>
+	<p>7-9: choose 2:
+		<ul>
+			<li>You make too much noise. Advance the relevant Mission Clock.</li>
+			<li>You take harm as established by the fiction.</li>
+			<li>An ally takes harm as established by the fiction.</li>
+			<li>Something of value breaks.</li>
+		</ul>
+	</p>
+</div>
+<div id="research"> 
+	<h1>Research</h1>
+	<p>When you investigate a person, place, object, or service using a library, dossier or database (or combination of them), ask a question from the list below and roll Mind.</p>
+	<p>10+: take [intel]; the MC will answer your question and answer a follow-up question from this list as well:
+		<ul>
+			<li>Where would I find ______?</li>
+			<li>How secure is ______?</li>
+			<li>Who or what is related to ______?</li>
+			<li>Who owned or employed ______?</li>
+			<li>Who or what is ______ most valuable to?</li>
+			<li>What is the relationship between ______ and ______?</li>
+		</ul>
+	</p>
+	<p>7-9: take [intel]; the MC will answer your question.</p>
+	<p>6-: the MC will answer your question... and make a move.</p>
+</div>
+<div id="fasttalk"> 
+	<h1>Fast Talk</h1>
+	<p>When you try to convince someone to do what you want with promises, lies or bluster, roll Style.</p>
+	<p>10+: NPCs do what you want. PCs choose whether to do it or not. If they do, they mark experience. If they don’t, they must act under pressure to go against your stated wishes.
+	<p>7-9: NPCs do it, but someone will find out: the MC will advance the appropriate Countdown Clock. For PCs choose one:
+		<ul>
+			<li>If they do what you want, they mark experience.</li>
+			<li>If they don’t do it, they must act under pressure to go against your stated wishes.</li>
+		</ul>
+	Then its up to them.
+	</p>
+</div>
+<div id="hitstreet"> 
+	<h1>Hit the Street</h1>
+	<p>When you go to a Contact for help, roll Style.</p>
+	<p>7+: You get what you want.</p>
+	<p>10+: You get a little something extra (choose either [intel] or [gear]).</p>
+	<p>7-9: choose 2 from the list below:
+		<ul>
+			<li>Your request is going to cost you extra.</li>
+			<li>Your request is going to take some time to put together.</li>
+			<li>Your request is going to attract unwanted attention, complications or consequences.</li>
+			<li>Your contact needs you to help them out with something. If you turn them down take -1 ongoing to this move till you make it right.</li>
+		</ul>
+	</p>
+</div>
+<div id="interfere"> 
+	<h1>Help or Interfere</h1>
+	<p>When you help or hinder another character, roll Links with them.</p>
+	<p>7+: On a hit they take +1 or -2 forward, your choice.</p>
+	<p>7-9: you are implicated in the results of the other character’s move and may expose yourself to danger, retribution, or cost.</p>
+</div>
+<div id="underknife"> 
+	<h1>Go Under the Knife</h1>
+	<p>When you have new cyberware installed by a street doctor, roll Cred spent (max +2).</p>
+	<p>10+: the operation was a complete success.</p>
+	<p>7-9: the cyberware doesn’t work as well as advertised, choose one: <i>+unreliable</i>,	<i>+substandard</i>, <i>+hardware decay</i>, <i>+damaging</i>.</p>
+	<p>6-: there have been... complications.</p>
+</div>
+<div id="getjob"> 
+	<h1>Get the Job</h1>
+	<p>When you negotiate the terms of a job, roll Edge.</p>
+	<p>10+: choose 3 from the list below.</p>
+	<p>7-9: choose 1 from the list below.
+		<ul>
+			<li>The employer provides useful information [intel].</li>
+			<li>The employer provides useful assets [gear].</li>
+			<li>The job pays well.</li>
+			<li>The meeting doesn’t attract attention.</li>
+			<li>The employer is identifiable.</li>
+		</ul>
+	</p>
+</div>
+<div id="getpaid"> 
+	<h1>Getting Paid</h1>
+	<p>When you go to a meet to get paid by your employer, roll and add the number of unfilled segments on the Legwork Clock.</p>
+	<p>10+: choose 3 from the list below.</p>
+	<p>7-9: choose 1 from the list below.
+		<ul>
+			<li>It’s not a set-up or an ambush.</li>
+			<li>You are paid in full.</li>
+			<li>The meeting doesn’t attract the attention of outside parties.</li>
+			<li>The employer is identifiable.</li>
+			<li>You learned something from the mission; everyone marks experience.</li>
+		</ul>
+	</p>
+</div>
+<div id="takeharm"> 
+	<h1>Take Harm</h1>
+	<p>When you suffer harm (even 0-harm or s-harm) lower the harm suffered by the level of your armour (if any), fill in a number of segments on your Harm Clock equal to the remaining harm, and roll harm suffered.</p>
+	<p>10+: choose 1:
+		<ul>
+			<li>You’re out of action: unconscious, trapped, incoherent or panicked.</li>
+			<li>Take the full harm of the attack, before it was reduced by armour; if you already took the full harm of the attack, take +1-harm.</li>
+			<li>Lose the use of a piece of cyberware until you can get it repaired.</li>
+			<li>Lose a body part (arm, leg, eye).</li>
+		</ul>
+	</p>
+	<p>7-9: the MC will choose 1:
+		<ul>
+			<li>You lose your footing.</li>
+			<li>You lose your grip on whatever you’re holding.</li>
+			<li>You lose track of someone or something you’re attending to.</li>
+			<li>Someone gets the drop on you.</li>
+		</ul>
+	</p>
+</div>
+<p id="cite">
+The Sprawl material is copyright Hamish Cameron. Find out more at <a href="http://www.ardens.org/games/the-sprawl/">ardens.org</a>.  Contents of free handouts provided here for personal reference only.  
+</p>
+
+
+</html>
