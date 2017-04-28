@@ -24,7 +24,7 @@ h1 {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 .item, #toolwrapper, #attribution, #show, #nav li {
-	background-color: transparent;	
+	background-color: black;	
 	/* these next three lines use an image I made for the border, to hopefully give it a pencilly effect. */
     	-webkit-border-image: url(reticle.png) 30% round; /* Safari */
     	-o-border-image: url(reticle.png) 30% round; /* Opera */
