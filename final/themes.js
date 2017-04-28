@@ -34,6 +34,9 @@ function changetheme(which){
 			$( '#citation').load( "./worlds_peril.html #cite"); //load citation info	
 			$( '#showcite').load( "./worlds_peril.html #cite"); //load citation info			
 			break;		
+		case "default":
+			changestylesheet("default.css");	
+			break;			
 		case "simple":
 			changestylesheet("apocalypse.css");	
 			break;
