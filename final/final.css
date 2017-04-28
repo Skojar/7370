@@ -97,6 +97,9 @@ div {
 	overflow-y: auto;
 
 }
+#show ul {
+	list-style-type: disc;
+}
 #ground {
 	display: block;
 	z-index: -1;
