@@ -15,7 +15,6 @@ function changetheme(which){
 		case "dungeon_world":
 			//dungeon world
 			document.title = "Dungeon World GM Helper";
-			if(!keep) changestylesheet("dungeon.css");
 			$( '#navigation' ).load( "./dungeon_world.html #nav" ); //load navigation	
 			$( '#citation').load( "./dungeon_world.html #cite"); //load citation info
 			$( '#showcite').load( "./dungeon_world.html #cite"); //load citation info			
