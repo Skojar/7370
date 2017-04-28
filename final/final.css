@@ -19,6 +19,9 @@
 	width: 2em;
 	vertical-align: bottom;	
 }
+#rollresults p {
+	text-align: center;
+}
 #rollbutton {
 	float: left;
 	width: 140px;
