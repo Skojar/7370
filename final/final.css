@@ -199,7 +199,9 @@ ul,li {
 .result {
 	margin: 0 auto;
 }
-
+.black {
+	color: black;
+}
 .failure {
 	color: red;
 }
