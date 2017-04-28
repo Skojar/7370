@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- this document contains content to be dynamically referenced -->
+<ul id="nav">
+	<li>Basic Moves
+		<ul>
+			<li onclick="showit('./monster_week.html #underpressure');" >Act Under Pressure</li>
+			<li onclick="showit('./monster_week.html #helpout');" >Help Out</li>
+			<li onclick="showit('./monster_week.html #investigate');" >Investigate A Mystery</li>	
+			<li onclick="showit('./monster_week.html #kickass');" >Kick Some Ass</li>			
+			<li onclick="showit('./monster_week.html #manipulate');" >Manipulate Someone</li>
+			<li onclick="showit('./monster_week.html #protect');" >Protect Someone</li>						
+			<li onclick="showit('./monster_week.html #badsituation');" >Read a Bad Situation</li>			
+		</ul>
+	</li>
+	<li>Magic Moves
+		<ul>
+			<li onclick="showit('./monster_week.html #usemagic');" >Use Magic</li>	
+			<li onclick="showit('./monster_week.html #bigmagic');" >Big Magic</li>
+			<li onclick="showit('./monster_week.html #resurrection');" >Resurrection</li>			
+		</ul>
+	</li>
+</ul>
+<div id="underpressure"> 
+	<h1>Act Under Pressure</h1>
+	<p>When you act under pressure, roll+Cool.</p>
+	<p>On a 10+ you do what you set out to.</p>
+	<p>On a 7-9 the Keeper is going to give you a worse outcome, hard choice, or price to pay.</p>
+	<p>Advanced: On a 12+ you may choose to either do what you wanted and something extra, or to do what you wanted to absolute perfection.</p>
+</div>
+<div id="helpout"> 
+	<h1>Help Out</h1>
+	<p>When you help another hunter, roll+Cool.</p>
+	<p>On a 10+ your help grants them +1 to their roll.</p>
+	<p>On a 7-9 your help grants them +1 to their roll, but you also expose yourself to trouble or danger.</p>
+	<p>Advanced: On a 12+ your help lets them act as if they just rolled a 12, regardless of what they actually got.</p>
+</div>
+<div id="investigate"> 
+	<h1>Investigate A Mystery</h1>
+	<p>When you investigate a mystery, roll+Sharp.</p>
+	<p>On a 10+ hold 2, and on a 7-9 hold 1. One hold can be spent to ask the Keeper one of the following questions:
+		<ul>
+			<li>What happened here?</li>
+			<li>What sort of creature is it?</li>
+			<li>What can it do?</li>
+			<li>What can hurt it?</li>
+			<li>Where did it go?</li>
+			<li>What was it going to do?</li>
+			<li>What is being concealed here?</li>
+		</ul>
+	</p>
+	<p>Advanced: On a 12+, you may ask the Keeper any question you want about the mystery, not just the listed ones.</p>
+</div>
+<div id="manipulate"> 
+	<h1>Manipulate Someone</h1>
+	<p>Once you have given them a reason, tell them what you want them to do and roll+Charm.</p>
+	<h1>For a normal person:</h1>
+	<p>On a 10+, then they’ll do it for the reason you gave them. If you asked too much, they’ll tell you the minimum it would take for them to do it (or if there’s no way they’d do it).</p>
+	<p>On a 7-9, they’ll do it, but only if you do something for them right now to show that you mean it. If you asked too much, they’ll tell you what, if anything, it would take for them to do it.</p>
+	<p>Advanced: On a 12+ not only do they do what you want right now, they also become your ally for the rest of the mystery (or, if you do enough for them, permanently).</p>
+	<h1>For another hunter:</h1>
+	<p>On a 10+, if they do what you ask they mark experience and get +1 forward.</p>
+	<p>On a 7-9, they mark experience if they do what you ask.</p>
+	<p>On a miss, it’s up to that hunter to decide how badly you offend or annoy them. They mark experience if they decide not to do what you asked. Monsters and minions cannot normally be manipulated.</p>
+	<p>Advanced: On a 12+ they must act under pressure to resist your request. If they do what you ask, they mark one experience and take +1 ongoing while doing what you asked.</p>
+</div>
+<div id="protect"> 
+	<h1>Protect Someone</h1>
+	<p>When you prevent harm to another character, roll +Tough.</p>
+	<p>On any success (i.e., 7 or more), you protect them okay, but you’ll suffer some or all of the harm they were going to get.</p>
+	<p>If you got a 10+ choose an extra:
+		<ul>
+			<li>You suffer little harm (-1 harm).</li>
+			<li>All impending danger is now focused on you.</li>
+			<li>You inflict harm on the enemy.</li>
+			<li>You hold the enemy back.</li>
+		</ul>
+	</p>
+	<p>On a miss, then you end up making things worse.</p>
+</div>
+<div id="badsituation"> 
+	<h1>Read a Bad Situation</h1>
+	<p>When you look around and read a bad situation, roll +Sharp.</p>
+	<p>On a 10+ hold 3, and on a 7-9, hold 1.</p>
+	<p>One hold can be spent to ask the Keeper one of the following questions:
+		<ul>
+			<li>What’s my best way in?</li>
+			<li>What’s my best way out?</li>
+			<li>Are there any dangers we haven’t noticed?</li>
+			<li>What’s the biggest threat?</li>
+			<li>What’s most vulnerable to me?</li>
+			<li>What’s the best way to protect the victims?</li>
+		</ul>
+	</p>
+	<p>If you act on the answers, you get +1 ongoing while the information is relevant.</p>
+</div>
+<div id="usemagic"> 
+	<h1>Use Magic</h1>
+	<p>When you use magic, say what you’re trying to achieve and how you do the spell, then roll +Weird.</p>
+	<p>If you get a 10+, the magic works without issues: choose your effect.</p>
+	<p>On a 7-9, it works imperfectly: choose your effect and a glitch. The Keeper will decide what effect the glitch has.</p>
+	<p>On a miss, you lose control of the magic. This never ends well.</p> 
+	<p>By default the magic has one of the effects listed below, lasts for around thirty minutes, and does not expose you to danger, unwanted attention, or side-effects. If there’s a glitch that might change.</p>
+	<p>Effects:
+		<ul>
+			<li>Inflict harm (1-harm ignore-armour magic obvious).</li>
+			<li>Enchant a weapon. It gets +1 harm and +magic.</li>
+			<li>Do one thing that is beyond human limitations.</li>
+			<li>Bar a place or portal to a specific person or a type of creature.</li>
+			<li>Trap a specific person, minion, or monster.</li>
+			<li>Banish a spirit or curse from the person, object, or place it inhabits.</li>
+			<li>Summon a monster into the world.</li>
+			<li>Communicate with something that you do not share a language with.</li>
+			<li>Observe another place or time.</li>
+			<li>Heal 1-harm from an injury, or cure a disease, or neutralize a poison.</li>
+		</ul>
+	</p>
+	<p>Glitches:
+		<ul>
+			<li>The effect is weakened.</li>
+			<li>The effect is of short duration.</li>
+			<li>You take 1-harm ignore-armour.</li>
+			<li>The magic draws immediate, unwelcome attention.</li>
+			<li>It has a problematic side effect.</li>
+		</ul>
+	</p>
+	<p>The Keeper may require one or more of the following:
+		<ul>
+			<li>The spell requires weird materials.</li>
+			<li>The spell will take 10 seconds, 30 seconds, or 1 minute to cast.</li>
+			<li>The spell requires ritual chanting and gestures.</li>
+			<li>The spell requires you to draw arcane symbols.</li>
+			<li>You need one or two people to help cast the spell.</li>
+			<li>You need to refer to a tome of magic for the details.</li>
+		</ul>
+	</p>
+</div>
+<div id="bigmagic"> 
+	<h1>Big Magic</h1>
+	<p>Sometimes the everyday spells and rituals of the use magic basic move aren’t enough. Big magic covers everything more powerful, such as bringing someone back from the dead or opening a portal to another dimension. Big magic is both more powerful and more dangerous than the basic use magic.</p>
+	<p>Decide what magical effect you want to make happen, and tell the Keeper. They will determine what you must do in order to cast the spell. The options (and the Keeper can pick more than one) are:
+		<ul>
+			<li>You need to spend a lot of time (days or weeks) researching the magic ritual.</li>
+			<li>You need to experiment with the spell—there will be lots of failures before you get it right.</li>
+			<li>You need some rare and weird ingredients and supplies.</li>
+			<li>The spell will take a long time (hours or days) to cast.</li>
+			<li>You need a lot of people (2, 3, 7, 13, or more) to help.</li>
+			<li>The spell needs to be cast at a particular place and/or time.</li>
+			<li>You need to use magic as part of the ritual, perhaps to summon a monster, communicate with something, or bar the portal you opened.</li>
+			<li>It will have a specific side-effect or danger.</li>
+		</ul>
+	</p>
+</div>
+<div id="resurrection"> 
+	<h1>Resurrection</h1>
+	<p>When you <b>return to life</b>, roll -Weird (so subtract three if you have +3 Weird, add one for -1 Weird, etc.). The weirder you are, the weirder it is when you come back from the dead.</p>
+	<p>On a 10+, you have changed a little. Mark experience and pick any one of the options below (for 7-9 or miss results).</p>
+	<p>On a 7-9, choose one of these:
+		<ul>
+			<li>You come back a little bit broken (memory loss, stressed, disconnected).</li>
+			<li>You come back a little different. Add 1 to one rating (max +3) and subtract 1 from another (min -2).</li>
+			<li>You come back very different. Change to a new playbook, just as if you took that advanced improvement.</li>
+			<li>Your revival satisfies an ancient prophecy.</li>
+			<li>Something comes back with you (e.g. a possessing spirit, a slain monster is revived, an ancient evil is released), but it’s not a pressing danger.</li>
+			<li>You, or the one who brought you back, owes a favour to a powerful spirit, monster, or demon.</li>
+		</ul>
+	</p>
+	<p>On a miss, choose one of these:
+		<ul>
+			<li>You come back broken (soulless, insane, depressive).</li>
+			<li>You come back disabled. Take -1 to a rating (to -2, at worst).</li>
+			<li>Your revival satisfies an ancient, dark, and terrible prophecy.</li>
+			<li>Something comes back with you (e.g. a possessing spirit, a slain monster is revived, an ancient evil is released). It is an immediate and pressing danger.</li>
+			<li>You, or the one who brought you back, owes a huge debt (soul, firstborn, ten years of servitude, etc.) to a powerful spirit, monster, or demon.</li>
+		</ul>
+	</p>
+</div>
+<div id="kickass"> 
+	<h1>Kick Some Ass</h1>
+	<p>When you <b>get into a fight and kick some ass</b>, roll +Tough.</p>
+	<p>On a 7+, you and whatever you’re fighting inflict harm on each other. The amount of harm is based on the established dangers in the game. That usually means you inflict the harm rating of your weapon and your enemy inflicts their attack’s harm rating on you.</p>
+	<p>On a 10+, choose one extra effect:
+		<ul>
+			<li>You gain the advantage: take +1 forward, or give +1 forward to another hunter.</li>
+			<li>You inflict terrible harm (+1 harm).</li>
+			<li>You suffer less harm (-1 harm).</li>
+			<li>You force them where you want them.</li>
+		</ul>
+	</p>
+	<p>Advanced: On a 12+ instead pick an enhanced effect:
+		<ul>
+			<li>You completely hold the advantage. All hunters involved in the fight get +1 forward.
+			<li>You suffer no harm at all.</li>
+			<li>Your attack inflicts double the normal harm.</li>
+			<li>Your attack drives the enemy away in a rout.</li>
+		</ul>
+	</p>
+</div>
+
+<p id="cite">
+Monster of the Week material is copyright Michael Sands. Find out more at <a href="http://www.evilhat.com/home/monster-of-the-week/">evilhat.com</a>.  Contents of free handouts provided here for personal reference only.  
+</p>
+
+
+</html>
