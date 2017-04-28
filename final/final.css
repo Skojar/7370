@@ -97,7 +97,7 @@ div {
 	overflow-y: auto;
 
 }
-#show ul {
+#show ul li {
 	list-style-type: disc;
 }
 #ground {
