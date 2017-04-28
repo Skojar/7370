@@ -26,9 +26,9 @@ h1 {
 .item, #toolwrapper, #attribution, #show, #nav li {
 	background-color: black;	
 	/* these next three lines use an image I made for the border, to hopefully give it a pencilly effect. */
-    	-webkit-border-image: url(reticle.png) 30% round; /* Safari */
-    	-o-border-image: url(reticle.png) 30% round; /* Opera */
-    	border-image: url(reticle.png) 30% round;		
+    	-webkit-border-image: url(reticle.png) 30% stretch; /* Safari */
+    	-o-border-image: url(reticle.png) 30% stretch; /* Opera */
+    	border-image: url(reticle.png) 30% stretch;		
 }
 
 #nav li { /* all list items in nav*/
