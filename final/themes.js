@@ -59,7 +59,7 @@ function changetheme(which){
 			$( '#navigation' ).load( "./worlds_peril.html #nav" ); //load navigation	
 			$( '#citation').load( "./worlds_peril.html #cite"); //load citation info	
 			$( '#showcite').load( "./worlds_peril.html #cite"); //load citation info			
-			if(!keep) changestylesheet("apocalype.css");	
+			if(!keep) changestylesheet("monster.css");	
 			break;			
 		default:
 			//blank
