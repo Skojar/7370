@@ -28,6 +28,10 @@
 	vertical-align: middle;
 	margin-top: 30px;
 }
+#dicecaption {
+	text-align: center;
+	font-variant: small-caps;
+}
 img {
 	border-style: none;
 }
