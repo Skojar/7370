@@ -112,6 +112,9 @@ div {
 #show ul li {
 	list-style-type: disc;
 }
+#showcite {
+	margin-top: 50px;
+}
 #ground {
 	display: block;
 	z-index: -1;
