@@ -23,7 +23,7 @@ function changetheme(which){
 		case "dungeon_world":
 			//dungeon world
 			document.title = "Dungeon World GM Helper";
-			changestylesheet("default.css");
+			changestylesheet("dungeon.css");
 			$( '#navigation' ).load( "./dungeon_world.html #nav" ); //load navigation	
 			$( '#citation').load( "./dungeon_world.html #cite"); //load citation info
 			break;
@@ -35,12 +35,12 @@ function changetheme(which){
 		case "monster_of_the_week":
 			//the sprawl
 			document.title = "Monster of the Week Keeper Helper";
-			changestylesheet("moweek.css");			
+			changestylesheet("monster.css");			
 			break;
-		case "urban_shadows":
+		case "uncharted_worlds":
 			//the sprawl
-			document.title = "Urban Shadows MC Helper";
-			//changestylesheet("usstyle.css");	
+			document.title = "Uncharted Worlds GM Helper";
+			changestylesheet("uncharted.css");	
 			break;
 		default:
 			//blank
