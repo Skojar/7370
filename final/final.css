@@ -113,7 +113,7 @@ div {
 #bottomspacer {
 	/* this is to make a blank space at the bottom of the page, so the attribution div doesn't block content.*/
 	clear: both;
-	height:20em;
+	height:5em;
 	visibility: hidden;
 }
 .item {
@@ -157,12 +157,16 @@ div {
     	padding: 25px 20% 25px 5%; 
 	*/	
 	text-align: justify;
-	width: 100%;
+	width: 90%;
 	border: 10px solid transparent;
 	padding: 50px;
+	clear: both;
 }
 #citation, #pbta {
 	display: inline-block;
+}
+#citiation {
+	width: 600px;
 }
 #theme_selection {
 	text-align: center;
