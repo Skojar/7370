@@ -53,6 +53,14 @@ function changetheme(which){
 			$( '#showcite').load( "./uncharted_worlds.html #cite"); //load citation info			
 			if(!keep) changestylesheet("uncharted.css");	
 			break;
+		case "world_peril":
+			//worlds in peril
+			document.title = "Worlds in Peril EIC Helper";
+			$( '#navigation' ).load( "./worlds_peril.html #nav" ); //load navigation	
+			$( '#citation').load( "./worlds_peril.html #cite"); //load citation info	
+			$( '#showcite').load( "./worlds_peril.html #cite"); //load citation info			
+			if(!keep) changestylesheet("apocalype.css");	
+			break;			
 		default:
 			//blank
 	}
