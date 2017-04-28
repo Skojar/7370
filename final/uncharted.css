@@ -21,19 +21,19 @@ a.hover {
 h1 {
 	color: #fe0052;
 	font-size: x-large;
-	font-family: ‘Lucida Console’, Monaco, monospace;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 .item, #toolwrapper, #attribution, #show, #nav li {
-	background-color: transparent;	
+	background-color: black;	
 	/* these next three lines use an image I made for the border, to hopefully give it a pencilly effect. */
-    	-webkit-border-image: url(crtborder.png) 30% round; /* Safari */
-    	-o-border-image: url(crtborder.png) 30% round; /* Opera */
-    	border-image: url(crtborder.png) 30% round;		
+    	-webkit-border-image: url(reticle.png) 30% stretch; /* Safari */
+    	-o-border-image: url(reticle.png) 30% stretch; /* Opera */
+    	border-image: url(reticle.png) 30% stretch;		
 }
 
 #nav li { /* all list items in nav*/
 	color: deepskyblue;	
 	font-weight: bold;
 	text-decoration: none;	
-	font-family: ‘Lucida Console’, Monaco, monospace;	
+	font-family: "Trebuchet MS", Helvetica, sans-serif;	
 }
