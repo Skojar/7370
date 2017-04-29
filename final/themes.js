@@ -24,9 +24,9 @@ function changetheme(which){
 		case "world_peril":
 			//worlds in peril
 			document.title = "Worlds in Peril EIC Helper";
-			$( '#navigation' ).load( "./worlds_peril.html #nav" ); //load navigation	
-			$( '#citation').load( "./worlds_peril.html #cite"); //load citation info	
-			$( '#showcite').load( "./worlds_peril.html #cite"); //load citation info			
+			$( '#navigation' ).load( "./world_peril.html #nav" ); //load navigation	
+			$( '#citation').load( "./world_peril.html #cite"); //load citation info	
+			$( '#showcite').load( "./world_peril.html #cite"); //load citation info			
 			break;		
 		case "default":
 			changestylesheet("default.css");	
