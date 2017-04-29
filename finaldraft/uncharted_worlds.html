@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- this document contains content to be dynamically referenced -->
+<ul id="nav">
+	<li>Common Moves
+		<ul>
+			<li onclick="showit('./uncharted_worlds.html #adversity');" >Face Adversity</li>
+			<li onclick="showit('./uncharted_worlds.html #assessment');" >Assessment</li>
+			<li onclick="showit('./uncharted_worlds.html #getinvolved');" >Get Involved</li>
+		</ul>
+	</li>
+	<li>Stat Moves
+		<ul>
+			<li onclick="showit('./uncharted_worlds.html #openfire');" >Open Fire</li>
+			<li onclick="showit('./uncharted_worlds.html #launchassault');" >Launch Assault</li>
+			<li onclick="showit('./uncharted_worlds.html #patchup');" >Patch Up</li>			
+			<li onclick="showit('./uncharted_worlds.html #command');" >Command</li>
+			<li onclick="showit('./uncharted_worlds.html #access');" >Access</li>	
+			<li onclick="showit('./uncharted_worlds.html #brace4impact');" >Brace for Impact</li>				
+		</ul>
+	</li>
+	<li>Enterprise Moves
+		<ul>
+			<li onclick="showit('./uncharted_worlds.html #shieldsup');" >Shields Up</li>
+			<li onclick="showit('./uncharted_worlds.html #wildjump');" >Wild Jump</li>
+			<li onclick="showit('./uncharted_worlds.html #crampedquarters');" >Cramped Quarters</li>
+			<li onclick="showit('./uncharted_worlds.html #acquisition');" >Acquisition</li>
+			<li onclick="showit('./uncharted_worlds.html #barter');" >Barter</li>
+		</ul>
+	</li>
+	<li>Choose a Game
+		<ul>
+			<li onclick="changetheme('dungeon_world');" >Dungeon World</li>
+			<li onclick="changetheme('world_peril');" >Worlds in Peril</li>			
+		</ul>
+	</li>
+	<li>Choose a Theme
+		<ul>
+			<li onclick="changetheme('simple');" >Simple</li>
+			<li onclick="changetheme('notebook');" >Notebook</li>
+			<li onclick="changetheme('cybergrid');" >CRTgrid</li>
+			<li onclick="changetheme('cosmic');" >Cosmic</li>
+			<li onclick="changetheme('default');" >Default</li>			
+		</ul>		
+	</li>
+	<li>More About this Site
+		<ul>
+			<li onclick="showitsmall('./about.html #about');" >Feature List</li>
+			<li onclick="showitsmall('./about.html #checklist');" >Project Checklist</li>
+		</ul>
+	</li>	
+</ul>
+<div id="adversity"> 
+	<h1>FACE ADVERSITY (+Stat)</h1>
+	<p>When you <b>overcome opposition or danger</b> using…<br />
+		…stealth, piloting, accuracy or discipline, Roll+Mettle<br />
+		…knowledge, mechanics or first-aid, Roll+Expertise<br />
+		…athletics, endurance, strength or health, Roll+Physique<br />
+		…charm, diplomacy, bargaining or lies, Roll+Influence<br />
+		…open computer systems and networks, Roll+Interface</p>
+	<p>On a 10+ you overcome the opposition or danger, just as you described.</p>
+	<p>On a 7-9, the danger is overcome, but at a price; the GM	will offer you a cost or a hard choice.</p>
+</div>
+<div id="assessment"> 
+	<h1>ASSESSMENT (+Stat)</h1>
+	<p>When you <b>collect critical information about an important,
+	dangerous or mysterious subject</b> using…<br />
+		…stealth, focus or cunning, Roll+Mettle<br />
+		…research and experimentation, Roll+Expertise<br />
+		…exploration, labor or strenuous activity, Roll+Physique<br />
+		…informants, interviews or gossip, Roll+Influence<br />
+		…the SectorNet or open networks, Roll+Interface</p>
+	<p>On a 10+, you gain significant information about the	subject, and earn a Data Point about it as well.</p>
+	<p>On a 7-9, the GM will reveal interesting, potentially useful	information about the subject. Or they might ask you to do so.</p>
+	<p>On a 6-, the GM will reveal facts about the subject you probably wish were not true.</p>
+</div>
+<div id="getinvolved"> 
+	<h1>GET INVOLVED (+Stat)</h1>
+	<p>When an ally makes a Move and you <b>affect the result</b> using…<br />
+		…stealth, piloting, accuracy, or bravery, Roll+Mettle<br />
+		…education, mechanics or first aid, Roll+Expertise<br />
+		…athletics, endurance, strength or health, Roll+Physique<br />
+		…charm, diplomacy, bargaining or lies, Roll+Influence<br />
+		…open computer systems and networks, Roll+Interface</p>
+	<p>On a 10+ Choose 1:</p>
+		<ul>
+			<li>Turn a failure(6-) into a partial success (7-9).</li>
+			<li>Turn a partial success(7-9) into a full success (10+).</li>
+			<li>Turn a full success(10+) into a partial success(7-9).</li>
+			<li>Turn a partial success(7-9) into a failure(6-).</li>
+		</ul>
+	
+	<p>On a 7-9, as above, but you incur a cost, complication or hard choice in order to get involved.</p>
+</div>
+<div id="openfire"> 
+	<h1>OPEN FIRE (+Mettle)</h1>
+	<p>When you <b>engage enemy forces in long ranged, cover-to-cover firefights</b>, describe your tactics, primary targets and Roll+Mettle.</p>
+	<p>On a 10+, you win this engagement. Your targets are dead, injured, incapacitated, retreating, pinned, surrendering, etc.</p>
+	<p>On a 7-9, as above, but the GM will choose 1 or more of the following consequences:</p>
+		<ul>
+			<li>You suffer harm during the exchange.</li>
+			<li>The exchange causes undesirable collateral damage.</li>
+			<li>The battle shifts, changing threats or adding new ones.</li>
+			<li>The targets actually suffer a lesser fate (GM chooses).</li>
+		</ul>
+	
+</div>
+<div id="launchassault"> 
+	<h1>LAUNCH ASSAULT (+Physique)</h1>
+	<p>When you <b>engage enemy forces in chaotic close-quarters combat</b>, describe your tactics and primary targets, then	Roll+Physique</p>
+	<p>On a 10+, you win this engagement. Your targets are dead, injured, incapacitated, retreating, pinned, surrendering, etc.</p>
+	<p>On a 7-9, as above, but the GM will choose 1 or more of the following consequences:</p>
+		<ul>
+			<li>You suffer harm during the exchange.</li>
+			<li>The exchange causes undesirable collateral damage.</li>
+			<li>The battle shifts, changing threats or adding new ones.</li>
+			<li>The targets actually suffer a lesser fate (GM chooses).</li>
+		</ul>
+	
+</div>
+<div id="patchup"> 
+	<h1>PATCH UP (+Expertise)</h1>
+	<p>When using appropriate medical supplies/tools to repair harm to people or machinery, Roll+Expertise.</p>
+	<p>On a 10+, choose 1 from the list below.</p>
+	<p>On a 7-9, choose 1, but you’ve reached the limit of what you can do; you cannot re-attempt to Patch Up the subject for now.</p>
+	<ul>
+		<li>Treat a single minor, major or severe injury/damage</li>
+		<li>Treat a malfunction or minor debility</li>
+		<li>Stabilize a major debility</li>
+		<li>Perform a medical/technical procedure</li>
+	</ul>
+</div>
+<div id="command"> 
+	<h1>COMMAND (+Influence)</h1>
+	<p>When you <b>issue a command to a group that is inclined to follow your orders</b>, Roll+Influence.</p>
+	<p>On a 10+, they follow those orders to the best of their ability, though there may be costs in time, resources or personnel.</p>
+	<p>On a 7-9, as above, but their disposition or effectiveness has been significantly impacted in some way. This crew will	not accept a new Command until those issues have been dealt with.</p>
+</div>
+<div id="access"> 
+	<h1>ACCESS (+Interface)</h1>
+	<p>When you <b>spend several minutes accessing a locked, protected system or network with the appropriate tools</b>,	Roll+Interface.</p>
+	<p>On a 10+, credentials verified, access granted. The system is now open to Interface-based Moves.</p>
+	<p>On a 7-9, as above, but your breach is detected. The owners of the system will likely retaliate soon, either electronically, legally or physically.</p>
+</div>
+<div id="brace4impact"> 
+	<h1>BRACE FOR IMPACT (+Armor)</h1>
+	<p>When you would suffer harm, the GM will tell you	the Severity (Minor, Major, Severe, Critical or Fatal).	Roll+Armor.</p>
+	<p>On a 13+, the severity is reduced by two levels.</p>
+	<p>On a 10-12, the severity is reduced by one level.</p>
+	<p>On a 7-9, you suffer an injury of that severity.</p>
+	<p>On a 6-, you also suffer debilities, incur costs/troubles, or suffer an injury of a greater severity, at the GM’s discretion.</p>
+</div>
+<div id="shieldsup"> 
+	<h1>SHIELDS UP</h1>
+	<p>When one of the starship sections would suffer damage from outside, the pilot Rolls 2d6. If a character is at the	shield station, they Roll instead, and add their +Interface.</p>
+	<p>On a 10+, the severity of the damage is reduced by two.</p>
+	<p>On a 7-9, the severity of the damage is reduced by one.</p>
+	<p>On a 6-, shields down! The section suffers damage, and the shields need to be repaired or recharged before they can be used again.</p>
+</div>
+<div id="wildjump"> 
+	<h1>WILD JUMP</h1>
+	<p>When you <b>force your ship to make a Wild Jump</b>, Roll 2d6.</p>
+	<p>On a 10+, the crew only suffers nausea, headaches and other minor effects. You reach a point within a week’s travel of your	destination, or choose from the list below.</p>
+	<p>On a 7-9, the illness and hallucinations are pronounced. The	GM chooses one from the list below:</p>
+		<ul>
+			<li>You find an uncharted world, ready for exploration.</li>
+			<li>You find exploitable resources, there for the taking.</li>
+			<li>You discover a scientifically-interesting phenomenon.</li>
+			<li>You discover wreckage or ruins of unknown origin.</li>
+			<li>You find a new path to a well-known destination.</li>
+			<li>You encounter a faction or culture that is new to you.</li>
+		</ul>
+	
+	<p>On a 6-, the GM will describe the ugly, debilitating, terrifying	consequences. It’s full of stars.</p>
+</div>
+<div id="crampedquarters"> 
+	<h1>CRAMPED QUARTERS</h1>
+	<p>When you’ve been trapped in cramped quarters with the same people for a significant amount of time (a leg of an interstellar journey, etc), choose a character trapped here	with you and Roll 2d6.</p>
+	<p>On a 10+, describe how the two of you bonded over the past few days.</p>
+	<p>On a 7-9, reveal/discover the answer to their question about an aspect of yourself or your past.</p>
+	<p>On a 6-, describe what caused the newest hurt feelings or bad blood between you.</p>
+</div>
+<div id="acquisition"> 
+	<h1>ACQUISITION (+Cargo)</h1>
+	<p>When you <b>demand important services or assets from a market able to supply those demands</b>, Roll+0. If you offer a	cargo unit as part of the deal, Roll+ that cargo’s Class.</p>
+	<p>On a 13+, the deal goes through; you get what you asked for.</p>
+	<p>On a 10-12, the deal goes through if the seller/market is amiably disposed toward the deal. Otherwise, as 7-9.</p>
+	<p>On a 7-9, the deal will only go through if you accept a cost, a task or a lesser asset/service instead of what you asked for.</p>
+	<p>On a 6-, the deal will only go through if you call in a Favor.</p>
+</div>
+<div id="barter"> 
+	<h1>BARTER (+Cargo)</h1>
+	<p>When you <b>exchange a foreign unit of cargo for local trade	goods</b>, Roll + the Class of the cargo unit.</p>
+	<p>On a 13+, you attract the attention of a faction or individual with a unique item or service to trade.</p>
+	<p>On a 10-12, you get a higher Class cargo of local goods in exchange, to a max of Class 4.</p>
+	<p>On a 7-9, you get a higher Class cargo, to a max of Class 4,	and the GM chooses one flaw:</p>
+		<ul>
+			<li>The negotiations take many days to complete.</li>
+			<li>The goods need special care (fragile, hazardous, etc).</li>
+			<li>The goods are very odd, distasteful or bizarre.</li>
+			<li>The provenance or legality of the goods is dubious.</li>
+		</ul>
+	
+</div>
+<p id="cite">
+Uncharted Worlds is by Sean Gomes and is licensed under a <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.  Find out more at <a href="http://uncharted-worlds.com/">uncharted-worlds.com</a>.
+</p>
+
+
+</html>

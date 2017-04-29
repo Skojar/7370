@@ -1,0 +1,40 @@
+#rollresults,#advisoroutput {
+	background-color: #383838;
+}
+
+body {
+	background-color: darkslategrey;
+	color: #acea00;
+	font-family: ‘Courier New’, Courier, monospace;	
+	background-image: url("./grid.png");
+}
+		
+a {
+	color: chartreuse;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a.hover {
+	font-style: italic;
+}
+h1 {
+	color: deeppink;
+	font-size: x-large;
+	font-family: ‘Lucida Console’, Monaco, monospace;
+}
+.item, #toolwrapper, #attribution, #show, #nav li, #showsmall {
+	background-color: #383838;	
+	/* these next three lines use an image I made for the border, to hopefully give it a pencilly effect. */
+    	-webkit-border-image: url(crtborder.png) 30% round; /* Safari */
+    	-o-border-image: url(crtborder.png) 30% round; /* Opera */
+    	border-image: url(crtborder.png) 30% round;		
+}
+
+#nav li { /* all list items in nav*/
+	color: chartreuse;	
+	font-weight: bold;
+	text-decoration: none;	
+	font-family: ‘Lucida Console’, Monaco, monospace;	
+}
+

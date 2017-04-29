@@ -1,0 +1,38 @@
+#rollresults,#advisoroutput {
+	background-color: white;
+}
+
+body {
+	background-color: white;
+	color: black;
+	font-family: Century Gothic, sans-serif;	
+}
+		
+a {
+	color: maroon;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a.hover {
+	font-style: italic;
+}
+h1 {
+	color: maroon;
+	font-size: x-large;
+	font-family: ‘Arial Black’, Gadget, sans-serif;
+}
+.item, #toolwrapper, #attribution, #show, #nav li, #showsmall {
+	background-color: white;	
+	/* these next three lines use an image I made for the border, to hopefully give it a pencilly effect. */
+    	-webkit-border-image: url(jaggedborder.png) 30% stretch; /* Safari */
+    	-o-border-image: url(jaggedborder.png) 30% stretch; /* Opera */
+    	border-image: url(jaggedborder.png) 30% stretch;		
+}
+
+#nav li { /* all list items in nav*/
+	color: dimgrey;	
+	font-weight: bold;
+	text-decoration: none;	
+	font-family: ‘Arial Black’, Gadget, sans-serif;
+}

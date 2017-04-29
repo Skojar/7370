@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="final.css" id="structure" />
+		<link rel="stylesheet" href="default.css" id="theme" />
+		<title>Powered By Adventures MC Helper</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="./final.js"></script>
+		<script src="./dice.js"></script>
+		<script src="./themes.js"></script>
+		<script src="./moveadvisor.js"></script>		
+	</head>
+	<body>
+		<h1 id="pagetitle">Powered By Adventures MC Helper</h1>
+		<div id="navigation"> </div><!-- this div contains the navigation lists, loaded dynamically -->
+		<div id="ground"> <!-- this div is for ordinary content that show up by default. -->
+
+			<div class="item" title="Dice Roller">
+				<div id="rollerwrapper"> <!-- this div is for the dice roller -->
+					
+					<div class="bonusbuttons">
+						<img src="./minusone.png" alt="roll 2d6 minus 1" onclick="basicroll(-1);" /><br />
+						<img src="./minustwo.png" alt="roll 2d6 minus 2" onclick="basicroll(-2);" /><br />
+						<img src="./minusthree.png" alt="roll 2d6 minus 3" onclick="basicroll(-3);" />
+					</div>
+					<div id="rollbutton">
+						<img id="twodeesix" src="./2d6.png" alt="roll 2d6" onclick="basicroll();" width=100 />
+					</div>
+					<div class="bonusbuttons">
+						<img src="./plusone.png" alt="roll 2d6 plus 1" onclick="basicroll(1);" /><br />
+						<img src="./plustwo.png" alt="roll 2d6 plus 2" onclick="basicroll(2);" /><br />
+						<img src="./plusthree.png" alt="roll 2d6 plus 3" onclick="basicroll(3);" />
+					</div>
+				</div>
+				<p id="dicecaption">Click Dice to Roll</p>
+				<div id="rollresults"> </div>
+			</div>
+			
+			<div class="item" title="Move Suggester">
+				<div id="advisorwrapper"> 
+					<div id="advisoroutput" onclick="suggest();" > </div>
+					<h1 onclick="suggest();" id="inspirebutton">Click to Generate Move Suggestion</h1>
+				</div>			
+			</div>
+			<div class="item" title="About">
+				<h1>About</h1>
+				<p>This site is a project created for <a href="http://catalog.missouri.edu/courseofferings/is_lt/">ISLT 7370, Intermediate Web Development</a> at the University of Missouri. <a href="mailto:rebstockm@missouri.edu">Email the author</a> with any questions or concerns.</p>
+				<p>Theme switching, rules reference, dice roller, and move suggester demonstrate techniques utilizing CSS, JQuery, and AJAX.</p>
+				<hr />
+				<p>Cosmic theme starfield image courtesy of <a href="https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA12066">jpl.nasa.gov</a>.</p>
+			</div>				
+
+		</div>
+		<div id="bottomspacer"> </div>	
+		<div id="cancel"> </div> <!-- this div is the dark layer that hides the default content and acts as a "close lightbox" button. -->
+		<div id="show"> <!-- the show.. divs are for showing dynamic content. part of the simple lightbox. -->
+			<div id="showquote"> </div>
+			<hr />
+			<div id="showcite"> </div>
+		</div> 
+		<div id="showsmall"> </div>
+		<div id="attribution" title="Content Attribution"> <!-- this div is for the citation information. -->
+			<div id="citewrap">
+				<a href="http://apocalypse-world.com/"><img src="./pbta.jpg" id="pbta" alt="Powered By the Apocalypse" /></a>
+				<div id="citation"> </div> <!-- exists to have citationg information .load()ed into it. -->
+			</div>
+		</div>
+	</body>
+</html>

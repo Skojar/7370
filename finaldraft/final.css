@@ -1,0 +1,283 @@
+#pagetitle {
+	display: block;
+	width: 100%;
+	font-size: x-large;
+	text-align: center;
+}
+#rollresults {
+	float: left;
+	margin: auto;
+	width: 270px;
+	height: 230px;
+	border: solid 1px;
+	overflow: auto;
+	padding: 1em;
+	font-family: Tahoma, Geneva, sans-serif;
+	clear: both;
+}
+#rollresults img {
+	width: 2em;
+	vertical-align: bottom;	
+}
+#rollresults p {
+	text-align: center;
+}
+#rollbutton {
+	float: left;
+	width: 140px;
+	height: 105px;
+	text-align: center;
+	margin: auto;
+	vertical-align: middle;
+	margin-top: 30px;
+}
+#dicecaption {
+	text-align: center;
+	font-variant: small-caps;
+}
+img {
+	border-style: none;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	font-style: italic;
+}
+.bonusbuttons {
+	float: left;
+	width: 45px;
+	height: 45px;
+	
+}
+.bonusbuttons img {
+	margin: 2px;
+	width: 38px;
+}
+
+#twodeesix {
+	vertical-align: middle;
+}
+
+div {
+	background-color: transparent;
+}
+#rollerwrapper {
+	margin: 10px auto;
+	height: 165px;
+	width: 230px;
+}
+#advisorwrapper {
+	text-align: center;
+	vertical-align: bottom;
+}
+
+#advisoroutput {
+	width: 270px;
+	height: 375px;
+	border: solid 1px;
+	overflow: auto;
+	padding: 10px;
+	margin: 0 auto;
+	float: left;
+	text-align: left;
+}
+
+#cancel { /* this is the grey layer that appears behind the lightbox content.  It serves only two purposes: make the lightbox content stand out, and serrve as a "close lightbox" button. */
+	display: none; /* it starts out not displayed.  Thic changes to block when the lightbox is up */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 1;
+}
+#show, #showsmall { /* the divs that're on top of everything else and show loaded content.  it's the 'light' part of the lightbox. */
+	display: none; /* they start out not displayed.  This changes to block when the lightbox is up */
+	position: fixed;
+	top: 10%;
+	z-index: 100;
+	border-radius: 10px;
+	padding: 25px;
+	border: 10px solid transparent;
+    	padding: 15px;
+	overflow-y: auto;
+	height: 500px;
+}
+#show {
+	width: 80%;
+	left: 10%;
+}
+#showsmall {
+	width: 300px;
+	left: 40%;
+}
+#show ul li {
+	list-style-type: disc;
+}
+#showcite {
+	margin-top: 50px;
+}
+#ground {
+	display: block;
+	z-index: -1;
+	clear: both;
+}
+#bottomspacer {
+	/* this is to make a blank space at the bottom of the page, so the attribution div doesn't block content.*/
+	clear: both;
+	height:5em;
+	visibility: hidden;
+}
+.item {
+	display: block;
+	float: left;
+	padding: 15px;
+	margin: 0;
+	width: 300px;
+	font-size: medium;	
+	height: 500px;
+	border: 10px solid transparent;
+	padding: 15px;
+	overflow-y: auto;
+	
+	
+}
+#toolwrapper { /* just like .item style except width */		/* opportunity to consolidate? */
+	width: 530px;
+	display: block;
+	float: left;
+	padding: 15px;
+	margin: 0;
+	font-size: medium;	
+	height: 500px;
+	border: 10px solid transparent;
+	padding: 15px;
+	overflow-y: auto;
+	
+	
+}
+#attribution {
+	text-align: justify;
+	width: 90%;
+	border: 10px solid transparent;
+	padding: 50px;
+	clear: both;
+	margin: auto;
+}
+#citewrap {
+	margin: auto;
+}
+#citation, #pbta {
+	display: inline-block;
+}
+#citation {
+	width: 600px;
+	margin-left: 50px;
+}
+#theme_selection {
+	text-align: center;
+	width: 100%;
+	display: block;
+}
+#theme_selection span {
+	width: 20%;
+	font-size: small;
+	font-variant: small-caps;
+}
+
+ul,li {
+	list-style-type: none;
+	padding-left: 10px;
+	margin-left: 10px;
+	text-indent: -10px;
+}
+
+.key {
+	margin: 0 auto;
+	text-align: center;
+}
+.done:before {
+	content: '\2611\20';
+	color: green;
+}
+.todo:before {
+	content: '\2610\20';
+	color: blue;
+}
+.fail:before {
+	content: '\2612\20';
+	color: red;
+}
+
+.symbol {
+		display: inline-block;
+		width: 1.5em;
+		height: 1.5em;
+		text-align: center;
+		vertical-align: sub;
+		border: 1px solid black;
+		border-radius: 5px;
+		background-color: oldlace;
+		font-size: x-large;
+		text-indent: 0;
+}
+.result {
+	margin: 0 auto;
+}
+.black {
+	color: black;
+}
+.failure {
+	color: red;
+}
+
+.partialsuccess {
+	color: grey;
+}
+
+.success {
+	color: green;
+}
+
+.advancedsuccess {
+	color: gold;
+}
+
+.suggestion {
+	margin-left: 2em;
+	text-indent: -2em;
+}
+
+/* everything from here down is for the dropdown menus.  Original code came from suckerfish */
+#nav, #nav ul { /* all lists */
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 1;
+}
+
+#nav a {
+	display: block;
+	width: 10em;
+}
+
+#nav li { /* all list items */
+	float: left;
+	width: 10em; /* width needed or else Opera goes nuts */
+	font-size: medium;
+	border-radius: 10px;
+	border: 10px solid transparent;
+	padding: 15px;
+}
+
+#nav li ul { /* second-level lists */
+	position: absolute;
+	width: 10em;
+	left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+}
+
+#nav li:hover ul, #nav li.sfhover ul { /* lists nested under hovered list items */
+	left: auto;
+}

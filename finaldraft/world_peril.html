@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- this document contains content to be dynamically referenced -->
+<ul id="nav">
+	<li>Basic Moves
+		<ul>
+			<li onclick="showit('./world_peril.html #takedown');" >Take Down</li>
+			<li onclick="showit('./world_peril.html #seizecontrol');" >Seize Control</li>
+			<li onclick="showit('./world_peril.html #push');" >Push</li>
+			<li onclick="showit('./world_peril.html #serveprotect');" >Serve and Protect</li>
+			<li onclick="showit('./world_peril.html #environment');" >Use Environment</li>
+			<li onclick="showit('./world_peril.html #defydanger');" >Defy Danger</li>			
+			<li onclick="showit('./world_peril.html #aidinterfere');" >Aid or Interfere</li>			
+			<li onclick="showit('./world_peril.html #examine');" >Examine</li>			
+		</ul>
+	</li>
+	<li>Special Moves
+		<ul>
+			<li onclick="showit('./world_peril.html #burnout');" >Burnout</li>
+			<li onclick="showit('./world_peril.html #gatherintel');" >Gather Intel</li>
+			<li onclick="showit('./world_peril.html #fitin');" >Fit In</li>			
+			<li onclick="showit('./world_peril.html #lastchance');" >Last Chance</li>
+			<li onclick="showit('./world_peril.html #dead4now');" >Dead For Now</li>			
+		</ul>
+	</li>
+	<li>Choose a Game
+		<ul>
+			<li onclick="changetheme('dungeon_world');" >Dungeon World</li>
+			<li onclick="changetheme('uncharted_worlds');" >Uncharted Worlds</li>
+		</ul>
+	</li>
+	<li>Choose a Theme
+		<ul>
+			<li onclick="changetheme('simple');" >Simple</li>
+			<li onclick="changetheme('notebook');" >Notebook</li>
+			<li onclick="changetheme('cybergrid');" >CRTgrid</li>
+			<li onclick="changetheme('cosmic');" >Cosmic</li>
+			<li onclick="changetheme('default');" >Default</li>			
+		</ul>		
+	</li>
+	<li>More About this Site
+		<ul>
+			<li onclick="showitsmall('./about.html #about');" >Feature List</li>
+			<li onclick="showitsmall('./about.html #checklist');" >Project Checklist</li>
+		</ul>
+	</li>	
+</ul>
+
+<div id="takedown"> 
+	<h1>Take Down</h1>
+	<p>Whenever you attempt to subdue an immediate threat, say how you do it and roll. The EIC will tell you which stat to add to the roll. On a 10+, choose 3. On a 7-9, choose 2:</p>
+		<ul>
+			<li>Impose a Condition (choose once for Minor, twice for Moderate, three times for Critical).</li>
+			<li>Take away an Advantage (choose twice).</li>
+			<li>Force a change of location (choose once and the EIC picks where they go, choose twice and you do).</li>
+			<li>Reduce the size of a mob by 1.</li>
+			<li>Take no harm in the doing.</li>
+		</ul>
+	
+</div>
+<div id="seizecontrol"> 
+	<h1>Seize Control</h1>
+	<p>Whenever you and another character struggle over a contested goal or objective, say how you outsmart, overpower, outmaneuver, or otherwise try to overcome them. The EIC will tell you which stat to add to your roll. On a 10+, choose two. On a 7-9, choose one:</p>
+		<ul>
+			<li>You seize control over what was contested.</li>
+			<li>You prevent yourself from ending up at a disadvantage or in harm’s way.</li>
+			<li>You put your opponent at a disadvantage.</li>
+		</ul>
+</div>
+<div id="push"> 
+	<h1>Push</h1>
+	<p>When you push your powers and concentrate to do something that is not on your Powers Profile sheet, first determine if the power falls under Simple, Difficult or Borderline, then roll. On a 10+, you do it and can add it to your powers profile if it’s not there already. On a 7-9, you can do it, but the EIC will offer you an ugly choice or hard bargain in order to do so; you also take a Minor Condition if it was Simple, a Moderate Condition if it was Difficult, or a Critical Condition if it was Borderline and you cannot add it to your Powers Profile sheet. On a 6-, you take a Condition as per a 7-9 and the EIC also makes a move.</p>
+</div>
+<div id="serveprotect"> 
+	<h1>Serve and Protect</h1>
+	<p>When you stand in defense of someone or something when an imminent threat or danger befalls them, roll+Protect. On a 10+, Hold 3. On a 7-9, Hold 1. As long as you continue to defend, spend Hold to ...</p>
+		<ul>
+			<li>Redirect an attack to yourself.</li>
+			<li>Reduce the effectiveness of an attack or Condition (Reduce the level of severity for every Hold spent).</li>
+			<li>Open up the attacker to an ally, giving that ally a bonus to take forward against the attacker (+1 for every Hold spent).</li>
+			<li>Create or advance a Bond with the person you are protecting by one.</li>
+		</ul>
+	
+</div>
+<div id="environment"> 
+	<h1>Use Environment</h1>
+	<p>When you use something from the environment to suit your purposes, the EIC will tell you one or more things about it:</p>
+	<ul>
+		<li>It’ll break quickly; use it while you can.</li>
+		<li>It’s dangerous; the EIC will say how.</li>
+		<li>It’s particularly effective; the EIC will say how.</li>
+		<li>You can use it, but there will be a side effect; the EIC will tell you what it is.</li>
+	</ul>
+	
+</div>
+<div id="defydanger"> 
+	<h1>Defy Danger</h1>
+	<p>When you act despite an imminent threat or dig in to endure a danger that has befallen you, say how you deal with it and roll. The EIC will tell you which stat to add to the roll. On a 10+, you do what you set out to do and the threat doesn’t come to bear or you endure it. On a 7-9, you can do it, but to do so the EIC will offer you a worse outcome, hard bargain, or ugly choice.</p>
+</div>
+<div id="aidinterfere"> 
+	<h1>Aid or Interfere</h1>
+	<p>When you help or hinder someone you have a Bond with, roll+Bond. On a 10+, choose two. On a 7-9, choose one, but there’s an obstacle to overcome first. You also expose yourself to danger, retribution, or the EIC will offer you an ugly choice.</p>
+		<ul>
+			<li>You make an untenable position or course secure.</li>
+			<li>You avoid taking harm in the doing.</li>
+			<li>They take a +1 or -2 forward, your choice.</li>
+		</ul>
+</div>
+<div id="examine"> 
+	<h1>Examine</h1>
+	<p>When you closely study a situation or person, roll+Investigate. On a 10+, ask the EIC three questions from the list below. On a 7-9, ask one. Either way, take +1 forward when acting on the answers.</p>
+	<ul>
+		<li>What happened here recently?</li>
+		<li>What is about to happen?</li>
+		<li>What danger should I be on the lookout for?</li>
+		<li>What here is useful or important?</li>
+		<li>Who’s really in control here?</li>
+		<li>What here is not what it appears to be?</li>
+	</ul>
+</div>
+<div id="burnout"> 
+	<h1>Burnout</h1>
+	<p>When the situation is desperate and you put all you have into one last attempt to save another when they are about to die and let your powers loose because of it, roll+Bond with that person. On a 10+, you do something you’ve never done, but that is possible with your powers; tell the table what it is and add it to your Powers Profile. After doing so, you’re hanging on by a thread and can do nothing but move and mumble a few words until you rest and recover (you now have 3 Critical Conditions); you may raise your Bond with them by 1 (if you Bond with them was negative, you may reset it to zero). On a 7-9, as a 10+, but make the Last Chance move upon completion. On a 6-, you do it, but you’re Dead for Now (make the Dead for Now move).</p>
+</div>
+<div id="gatherintel"> 
+	<h1>Gather Intel</h1>
+	<p>When your leads dry up, take to whatever avenues are open to you and roll. If you
+	do it ...<br />
+	... by shaking people down, roughing people up or with direct force, roll+Smash,<br />
+	... by going places you shouldn’t be, gaining access or being stealthy, roll+Maneuver<br />
+	... by doing research, gathering your thoughts, debate or analysis, roll+Investigate<br />
+	... by using your charm and social grace, roll+Influence<br />
+	... by calling in favors and relying on Bonds, roll+Bond</p>
+	<p>On a 10+, ask one. On a 7-9, your first-choice method comes up dry, you must enlist the aid of another PC or choose a different method. On a 6-, you don’t find trouble, trouble finds you. The EIC will ask you questions about what you were up to and then tell you what trouble arises.</p>
+	<ul>
+		<li>Who can tell me what I want to know?</li>
+		<li>Where can I find...?</li>
+		<li>What are the rumors about...?</li>
+		<li>Who is the most upset about...?</li>
+		<li>Who stands the most to gain from...?</li>
+	</ul>
+</div>
+<div id="fitin"> 
+	<h1>Fit In</h1>
+	<p>Whenever you have downtime and try to get back to your “normal” life in order to mend or create one a Bond, decide which Bond you want to focus on and roll+Bond. On a 10+, remove a number of Conditions equal to your Bond with that person and then raise your Bond with them by 1 after doing so. On a 7-9, as a 10+ result but you have to deal with a danger threatening your mundane life with the Bond involved. Begin framing and playing out the scene as usual, the EIC will jump in and add danger when they so choose.</p>
+</div>
+<div id="lastchance"> 
+	<h1>Last Chance</h1>
+	<p>When you try to keep on going despite taking a fourth Critical Condition, roll. On a 10+, you do it, you’re in a bad spot but you’re still alive and conscious with three Critical Conditions. On a 7-9, you do it, but you can only get up if you can keep your enemy talking (you must get them to reveal an answer to one question from the list) or if someone close to you is in peril. On 6-, your fate is sealed and you have no control over what your enemies do to you and those you failed to protect. The EIC will tell you what happens as the darkness takes you ... you are Dead For Now.</p>
+	<ul>
+		<li>What started them on their road to becoming a villain, what is their defining trauma?</li>
+		<li>How is their world view distorted and different from the norm?</li>
+		<li>Why are they upset with the status quo?</li>
+		<li>A What will the status quo look like after they succeed, in their mind?</li>
+		<li>A What connection do they have to you or any of the heroes?</li>
+	</ul>
+</div>
+<div id="dead4now"> 
+	<h1>Dead For Now</h1>
+	<p>When you take a fourth Critical Condition and die, roll. On a 10+, you will return next Issue, having survived or been brought back somehow; on a 7-9, you will return a few Issues later, but choose a complication from the list below. On a miss, you are dead until the EIC chooses to bring you back, with complications of their choosing.</p> 
+</div>
+
+<p id="cite">
+Worlds in Peril is by Kyle Simons and licensed under the <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons ShareAlike 3.0 Unported (CC BY-SA 3.0) License</a>.
+Find out more in the <a href="https://plus.google.com/communities/118321549054630517542/stream/f8ff0872-2af2-4817-9407-575b699c25aa" target="_blank">Google+ Community</a>. 
+</p>
+
+
+</html>
