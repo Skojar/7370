@@ -95,7 +95,6 @@ div {
 }
 #show, #showsmall { /* the divs that're on top of everything else and show loaded content.  it's the 'light' part of the lightbox. */
 	display: none; /* they start out not displayed.  This changes to block when the lightbox is up */
-	position: fixed;
 	top: 10%;
 	margin: auto;
 	z-index: 100;
