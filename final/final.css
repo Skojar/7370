@@ -93,21 +93,24 @@ div {
 	background-color: rgba(0,0,0,0.5);
 	z-index: 1;
 }
-#show { /* this is the div that's on top of everything else and shows loaded content.  it's the 'light' part of the lightbox. */
-	display: none; /* it starts out not displayed.  Thic changes to block when the lightbox is up */
+#show, #showsmall { /* the divs that're on top of everything else and show loaded content.  it's the 'light' part of the lightbox. */
+	display: none; /* they start out not displayed.  This changes to block when the lightbox is up */
 	position: fixed;
 	top: 10%;
-	left: 10%;
 	margin: auto;
 	z-index: 100;
-	width: 80%;
 	border-radius: 10px;
 	padding: 25px;
 	border: 10px solid transparent;
     	padding: 15px;
 	overflow-y: auto;
 	height: 500px;
-
+}
+#show {
+	width: 80%;
+}
+#showsmall {
+	width: 300px;
 }
 #show ul li {
 	list-style-type: disc;
