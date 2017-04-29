@@ -22,7 +22,7 @@ h1 {
 	font-size: x-large;
 	font-family: ‘Arial Black’, Gadget, sans-serif;
 }
-.item, #toolwrapper, #attribution, #show, #nav li {
+.item, #toolwrapper, #attribution, #show, #nav li, #showsmall {
 	background-color: white;	
 	/* these next three lines use an image I made for the border, to hopefully give it a pencilly effect. */
     	-webkit-border-image: url(jaggedborder.png) 30% stretch; /* Safari */
