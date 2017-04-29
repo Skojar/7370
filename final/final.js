@@ -1,16 +1,16 @@
-<!-- //Javascript for final project:
-
+<!-- //core Javascript for final project:
 
 $(document).ready(function(){
-    $( '#cancel' ).click(function(){ //if you click the cancel div, it and the show div are hidden.
+    	$( '#cancel' ).click(function(){ //if you click the cancel div, it and the show div are hidden.
 		$( '#cancel' ).css({"display":"none"});
-		$( '#show' ).css({"display":"none"});				
+		$( '#show' ).css({"display":"none"});
+		$( '#showsmall' ).css({"display":"none"});	    
 	});
-	$( '#navigation' ).load( "./default.html #nav" ); //load the default navigation
-	setTimeout(onRepeat, 3000); //provide move advice every thirty seconds.
+	$( '#navigation' ).load( "./default.html #nav" ); //load the default navigation with the page.
+	setTimeout(onRepeat, 3000); //provide initial move advice 3 seconds after page loads.
 });
 
-sfHover = function() { //this is taken straight from http://www.htmldog.com/articles/suckerfish/dropdowns/
+sfHover = function() { //this is taken straight from http://www.htmldog.com/articles/suckerfish/dropdowns/ it makes dropdowns work.
 	var sfEls = document.getElementById("nav").getElementsByTagName("LI");
 	for (var i=0; i<sfEls.length; i++) {
 		sfEls[i].onmouseover=function() {
@@ -28,7 +28,11 @@ function showit(what){ //this is called by onclick attributes, in this case I th
 	//make the cancel and show divs visible
 	$( '#cancel' ).css({"display":"block"});
 	$( '#show' ).css({"display":"block"});	
-	//if( parseFloat( $( '#show' ).css( "height" ) ) > 500 ) $( '#show' ).css( "height" , 500 ); //max height of show div is the height of .item divs.
+}
+function showitsmall(what){ //the same as above, but using a different destination div.
+	$( '#showsmall' ).load(what); 
+	$( '#cancel' ).css({"display":"block"});
+	$( '#showsmall' ).css({"display":"block"});	
 }
 
 //-->
