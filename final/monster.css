@@ -23,7 +23,7 @@ h1 {
 	font-size: x-large;
 	font-family: "Comic Sans MS", cursive, sans-serif;
 }
-.item, #toolwrapper, #attribution, #show, #nav li {
+.item, #toolwrapper, #attribution, #show, #nav li, #showsmall {
 	background-color: #faf6f2;	
 	/* these next three lines use an image I made for the border, to hopefully give it a pencilly effect. */
     	-webkit-border-image: url(notebookborder.png) 30% round; /* Safari */
