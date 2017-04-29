@@ -6,18 +6,13 @@ function changestylesheet(which){
 }	
 
 function changetheme(which){
-	//change:
-	//	page title
-	//	theme style sheet
-	//	menu bar items
-	//	citation
 	switch(which){
 		case "dungeon_world":
 			//dungeon world
 			document.title = "Dungeon World GM Helper";
 			$( '#navigation' ).load( "./dungeon_world.html #nav" ); //load navigation	
-			$( '#citation').load( "./dungeon_world.html #cite"); //load citation info
-			$( '#showcite').load( "./dungeon_world.html #cite"); //load citation info			
+			$( '#citation' ).load( "./dungeon_world.html #cite"); //load citation info
+			$( '#showcite' ).load( "./dungeon_world.html #cite"); //load citation info			
 			break;
 		case "uncharted_worlds":
 			//uncharted worlds
