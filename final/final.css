@@ -199,8 +199,8 @@ ul,li {
 }
 
 .key {
+	float: left;
 	text-align: center;
-	margin: 0 auto;
 }
 .done:before {
 	content: '\2611\20';
