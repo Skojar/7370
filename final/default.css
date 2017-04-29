@@ -19,7 +19,7 @@ h1 {
 	color: black;
 	font-size: x-large;
 }
-.item, #toolwrapper, #attribution, #show, #nav li {
+.item, #toolwrapper, #attribution, #show, #nav li, #showsmall {
 	background-color: white;
 	/* these next three lines use an image I made for the border, to hopefully give it a pencilly effect. */
     	-webkit-border-image: url(jaggedborder.png) 30% round; /* Safari */
