@@ -95,8 +95,7 @@ div {
 }
 #show, #showsmall { /* the divs that're on top of everything else and show loaded content.  it's the 'light' part of the lightbox. */
 	display: none; /* they start out not displayed.  This changes to block when the lightbox is up */
-	top: 10%;
-	margin: auto;
+	margin: 10% auto;
 	z-index: 100;
 	border-radius: 10px;
 	padding: 25px;
@@ -201,7 +200,7 @@ ul,li {
 }
 
 .key {
-	float: left;
+	margin: 0 auto;
 	text-align: center;
 }
 .done:before {
