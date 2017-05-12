@@ -2,15 +2,19 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<!-- one style sheet contains structural styling, the other contains colors and fonts and image urls. -->
+		<!-- the latter, #theme, is traded out for others via javascript, to change the look of the page. -->
 		<link rel="stylesheet" href="final.css" id="structure" />
 		<link rel="stylesheet" href="default.css" id="theme" />
 		<title>Powered By Adventures MC Helper</title>
+		<!-- I kept the .js code files modular to make it easy to remove a feature. -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="./final.js"></script>
-		<script src="./dice.js"></script>
-		<script src="./themes.js"></script>
-		<script src="./moveadvisor.js"></script>		
+		<script src="./final.js"></script><!-- navigation menus, lightboxes -->
+		<script src="./dice.js"></script><!-- dice roller.  used by only one div below. -->
+		<script src="./themes.js"></script><!-- theme switcher.  called by some menu items, located in seperate files. -->
+		<script src="./moveadvisor.js"></script><!-- move suggester, used by only one div below. -->		
 	</head>
+<!-- see https://github.com/Skojar/7370/blob/master/finaldraft/filelist.md for a description of all files used by this page. -->
 	<body>
 		<h1 id="pagetitle">Powered By Adventures MC Helper</h1>
 		<div id="navigation"> </div><!-- this div contains the navigation lists, loaded dynamically -->
@@ -37,13 +41,13 @@
 				<div id="rollresults"> </div>
 			</div>
 			
-			<div class="item" title="Move Suggester">
+			<div class="item" title="Move Suggester"><!-- this div is the move suggester -->
 				<div id="advisorwrapper"> 
 					<div id="advisoroutput" onclick="suggest();" > </div>
 					<h1 onclick="suggest();" id="inspirebutton">Click to Generate Move Suggestion</h1>
 				</div>			
 			</div>
-			<div class="item" title="About">
+			<div class="item" title="About"><!-- this div provides information about why the page exists -->
 				<h1>About</h1>
 				<p>This site is a project created for <a href="http://catalog.missouri.edu/courseofferings/is_lt/">ISLT 7370, Intermediate Web Development</a> at the University of Missouri. <a href="mailto:rebstockm@missouri.edu">Email the author</a> with any questions or concerns.</p>
 				<p>Theme switching, rules reference, dice roller, and move suggester demonstrate techniques utilizing CSS, JQuery, and AJAX.</p>
@@ -59,7 +63,7 @@
 			<hr />
 			<div id="showcite"> </div>
 		</div> 
-		<div id="showsmall"> </div>
+		<div id="showsmall"> </div> <!-- a second version of #show, for a select few things that don't need citation info, and work better in a narrower space. -->
 		<div id="attribution" title="Content Attribution"> <!-- this div is for the citation information. -->
 			<div id="citewrap">
 				<a href="http://apocalypse-world.com/"><img src="./pbta.jpg" id="pbta" alt="Powered By the Apocalypse" /></a>
